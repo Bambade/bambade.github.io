@@ -3,9 +3,6 @@ layout: page
 title: Resume
 ---
 
-{% include base_path %}
-{% capture written_label %}'None'{% endcapture %}
-
 <b>Peng Tang</b>
 
 PhD student
@@ -46,6 +43,3 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
