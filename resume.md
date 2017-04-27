@@ -14,6 +14,7 @@ Huazhong University of Science and Technology
 Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   
   
+
 #### Education
 
 * <b>2010.09-2014.06: B.S. in Electronic Information Engineering, Huazhong University of Science and Technology (HUST)</b>
@@ -25,6 +26,7 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   * <b>Advisor:</b> [Wenyu Liu](http://mclab.eic.hust.edu.cn/MCWebDisplay/PersonDetails.aspx?Name=Wenyu%20Liu) and [Xinggang Wang](http://mclab.eic.hust.edu.cn/~xwang/index.htm)
   
   
+
 #### Work experience
 
 * <b>2016.12-2017.06: Research Intern, Microsoft Research Asia (MSRA)</b>
@@ -32,6 +34,7 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   * <b>Mentor:</b> [Jingdong Wang](https://www.microsoft.com/en-us/research/people/jingdw/) and [Chunyu Wang](https://www.microsoft.com/en-us/research/people/chnuwa/).
   
   
+
 #### Skills
 
 * <b>Programming languages:</b> 
@@ -43,6 +46,7 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   * multiple instance learning
 * <b>Natural languages</b>
   * Mandarin/English
+  
   
   
 #### Publications
