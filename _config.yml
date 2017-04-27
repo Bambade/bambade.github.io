@@ -23,7 +23,7 @@ description: personal homepage
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  Home: "index"
   Publications: "publications"
   Resume: "resume"
 
