@@ -12,7 +12,8 @@ School of Electronic Information and Communications
 Huazhong University of Science and Technology
 
 Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
-  
+<br /> 
+<br /> 
   
 
 #### Education
@@ -23,16 +24,16 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
 * <b>2015.09-2019.06 (expected): PhD in  Computer Vision and Machine Learning, HUST</b>
   * <b>Focus aera:</b> image (scene, object) classification, object detection, weakly supervised learning, deep learning
   * <b>Advisor:</b> [Wenyu Liu](http://mclab.eic.hust.edu.cn/MCWebDisplay/PersonDetails.aspx?Name=Wenyu%20Liu) and [Xinggang Wang](http://mclab.eic.hust.edu.cn/~xwang/index.htm)
-  
-  
+<br /> 
+<br /> 
   
 
 #### Work experience
 * <b>2016.12-2017.06: Research Intern, Microsoft Research Asia (MSRA)</b>
   * <b>Focus area:</b> video object detection
   * <b>Advisor:</b> [Jingdong Wang](https://www.microsoft.com/en-us/research/people/jingdw/) and [Chunyu Wang](https://www.microsoft.com/en-us/research/people/chnuwa/).
-  
-  
+<br /> 
+<br /> 
   
 
 #### Skills
@@ -45,8 +46,8 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   * multiple instance learning
 * <b>Natural languages</b>
   * Mandarin/English
-  
-  
+<br /> 
+<br /> 
   
   
 #### Publications
