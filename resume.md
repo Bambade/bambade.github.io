@@ -16,7 +16,6 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   
 
 #### Education
-
 * <b>2010.09-2014.06: B.S. in Electronic Information Engineering, Huazhong University of Science and Technology (HUST)</b>
 * <b>2014.09-2015.06: M.S. in Computer Vision and Machine Learning, HUST</b>
   * <b>Focus aera:</b> middle-level representation and image understanding
@@ -29,7 +28,6 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   
 
 #### Work experience
-
 * <b>2016.12-2017.06: Research Intern, Microsoft Research Asia (MSRA)</b>
   * <b>Focus area:</b> video object detection
   * <b>Advisor:</b> [Jingdong Wang](https://www.microsoft.com/en-us/research/people/jingdw/) and [Chunyu Wang](https://www.microsoft.com/en-us/research/people/chnuwa/).
@@ -38,7 +36,6 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   
 
 #### Skills
-
 * <b>Programming languages:</b> 
   * Python/MATLAB/C++/LATEX
 * <b>Computer Vision and Machine Learning</b>
@@ -53,5 +50,4 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
   
   
 #### Publications
-
 Please see [publications](http://ppengtang.github.io/publications).
