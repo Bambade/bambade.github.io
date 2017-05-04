@@ -16,6 +16,6 @@ You can also browse my <a href="https://scholar.google.co.jp/citations?user=h_oY
 <br /> 
 
 #### Journal papers
-- <b>Peng Tang</b>, Xinggang Wang, Zilong Huang, Xiang Bai, Wenyu Liu. "Deep Patch Learning for Weakly Supervised Object Classification and Discovery". Pattern Recognition, 2017. ([PDF](http://www.sciencedirect.com/science/article/pii/S0031320317301838))
+- <b>Peng Tang</b>, Xinggang Wang, Zilong Huang, Xiang Bai, Wenyu Liu. "Deep Patch Learning for Weakly Supervised Object Classification and Discovery". Pattern Recognition, 2017. ([PDF](http://dx.doi.org/10.1016/j.patcog.2017.05.001))
 - <b>Peng Tang</b>, Xinggang Wang, Bin Feng, Wenyu Liu. "Learning Multi-instance Deep Discriminative Patterns for Image Classification". IEEE Transactions on Image Processing, 2016. ([PDF](http://ieeexplore.ieee.org/abstract/document/7792710/))
 - <b>Peng Tang</b>, Jin Zhang, Xinggang Wang, Bin Feng, Fabio Roli, Wenyu Liu. "Learning Extremely Shared Middle-level Image Representation for Scene Classification". Knowledge and Information Systems, 2016. ([PDF](https://rd.springer.com/article/10.1007/s10115-016-1015-z)) ([CODE](https://github.com/ppengtang/ESMIR))
