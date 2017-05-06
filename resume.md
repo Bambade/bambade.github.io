@@ -31,7 +31,7 @@ Email: pengtang AT  hust DOT edu DOT cn, tangpeng723 AT gmail DOT com
 #### Work experience
 * <b>2016.12-2017.06: Research Intern, Microsoft Research Asia (MSRA)</b>
   * <b>Focus area:</b> video object detection
-  * <b>Advisor:</b> [Jingdong Wang](https://www.microsoft.com/en-us/research/people/jingdw/) and [Chunyu Wang](https://www.microsoft.com/en-us/research/people/chnuwa/).
+  * <b>Advisor:</b> [Jingdong Wang](https://www.microsoft.com/en-us/research/people/jingdw/) and [Chunyu Wang](https://www.microsoft.com/en-us/research/people/chnuwa/)
 <br /> 
 <br /> 
   
