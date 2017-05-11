@@ -1254,30 +1254,30 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 24px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 16px;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 12px;
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 8px;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 6px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 4px;
 }
 .lead {
   margin-bottom: 20px;
