@@ -11,7 +11,7 @@ You can also browse my <a href="https://scholar.google.co.jp/citations?user=h_oY
 <br /> 
 
 #### Conference papers
-- <b>Peng Tang</b>, Xinggang Wang, Xiang Bai, Wenyu Liu. "Multiple Instance Detection Network with Online Instance Classifier Refinement". IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017. ([PDF](https://arxiv.org/abs/1704.00138)) ([CODE](https://github.com/ppengtang/oicr))
+- <b>Peng Tang</b>, Xinggang Wang, Xiang Bai, Wenyu Liu. "Multiple Instance Detection Network with Online Instance Classifier Refinement". IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017. ([PDF](http://openaccess.thecvf.com/content_cvpr_2017/papers/Tang_Multiple_Instance_Detection_CVPR_2017_paper.pdf)) ([CODE](https://github.com/ppengtang/oicr)) ([arxiv](https://arxiv.org/abs/1704.00138))
 <br /> 
 
 #### Journal papers
