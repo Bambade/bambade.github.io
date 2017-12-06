@@ -66,7 +66,7 @@ Please see [publications](http://ppengtang.github.io/publications).
 #### Academic Activities
 * Journal Reviewer
   * IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
-  * Neuralcomputing
+  * Neurocomputing
 * Conference Reviewer
   * NIPS 2016
   * CVPR 2018
