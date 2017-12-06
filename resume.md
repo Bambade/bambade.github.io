@@ -58,6 +58,8 @@ Please see [publications](http://ppengtang.github.io/publications).
 #### Awards
 * National PhD Scholarship, Huazhong University of Science and Technology, 2017.
 * Zhixing Graduate Student Scholarship, Huazhong University of Science and Technology, 2017.
+<br /> 
+<br /> 
 
 #### Academic Activities
 Reviewer for the following conferences and journals:
