@@ -29,7 +29,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/pengtang.jpg"
+avatar: "/img/zhishuai.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -43,6 +43,7 @@ author:
   name: Zhishuai Zhang
   email: "zhshuai.zhang@gmail.com"
   github: bairdzhang    # eg. daattali
+  linkedin: zhishuai 
 
 # Select which links to show in the footer
 footer-links-active:
@@ -53,7 +54,7 @@ footer-links-active:
   google-plus: false
   github: true
   reddit: false
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   snapchat: false
@@ -71,7 +72,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "ppengtang.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "https://zhishuai.xyz"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
