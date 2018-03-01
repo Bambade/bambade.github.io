@@ -1,0 +1,22 @@
+---
+layout: page
+title: Resume
+use-site-title: true
+---
+
+
+<script src="https://pdfobject.com/js/pdfobject.min.js"></script>
+<script>
+
+var options = {
+	pdfOpenParams: {
+		pagemode: "thumbs",
+		navpanes: 0,
+		toolbar: 0,
+		statusbar: 0,
+		view: "FitV"
+	}
+};
+
+var myPDF = PDFObject.embed("https://zhishuai.xyz/resume.pdf", "#pdf", options);
+</script>
