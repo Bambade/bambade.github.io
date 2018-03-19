@@ -7,8 +7,9 @@ You can also browse my <a href="https://scholar.google.com/citations?user=8gRM3x
 <br />
 
 #### Preprints
-- Siyuan Qiao, **Zhishuai Zhang**, Wei Shen, Bo Wang, Alan Yuille, "Gradually Updated Neural Networks for Large-Scale Image Recognition", Arxiv ([PDF](https://arxiv.org/pdf/1711.09280.pdf))
-- Jianyu Wang, **Zhishuai Zhang**, Cihang Xie, Vittal Premachandran, Alan Yuille, "Unsupervised learning of object semantic parts from internal states of CNNs by population encoding", Arxiv ([PDF](https://arxiv.org/pdf/1511.06855.pdf))
+- Siyuan Qiao, Wei Shen, **Zhishuai Zhang**, Bo Wang, Alan Yuille, "Deep Co-Training for Semi-Supervised Image Recognition", arXiv ([PDF](https://arxiv.org/pdf/1803.05984.pdf))
+- Siyuan Qiao, **Zhishuai Zhang**, Wei Shen, Bo Wang, Alan Yuille, "Gradually Updated Neural Networks for Large-Scale Image Recognition", arXiv ([PDF](https://arxiv.org/pdf/1711.09280.pdf))
+- Jianyu Wang, **Zhishuai Zhang**, Cihang Xie, Vittal Premachandran, Alan Yuille, "Unsupervised learning of object semantic parts from internal states of CNNs by population encoding", arXiv ([PDF](https://arxiv.org/pdf/1511.06855.pdf))
 <br /> 
 
 #### Conference papers
