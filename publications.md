@@ -22,5 +22,5 @@ You can also browse my <a href="https://scholar.google.com/citations?user=8gRM3x
 <br /> 
 
 #### Journal papers
-- Jianyu Wang, **Zhishuai Zhang**, Cihang Xie, Yuyin Zhou, Vittal Premachandran, Jun Zhu, Lingxi Xie, Alan Yuille, "Visual Concepts and Compositional Voting", Annals of Mathematical Sciences and Applications 2017 ([PDF](https://arxiv.org/pdf/1711.04451.pdf))
+- Jianyu Wang, **Zhishuai Zhang**, Cihang Xie, Yuyin Zhou, Vittal Premachandran, Jun Zhu, Lingxi Xie, Alan Yuille, "Visual Concepts and Compositional Voting", Annals of Mathematical Sciences and Applications 2018 ([PDF](https://arxiv.org/pdf/1711.04451.pdf))
 
