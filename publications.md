@@ -8,11 +8,11 @@ You can also browse my <a href="http://zzs.one/scholar" target="_blank">Google S
 
 #### Preprints
 - Cihang Xie, **Zhishuai Zhang**, Jianyu Wang, Yuyin Zhou, Zhou Ren, Alan Yuille, "Improving Transferability of Adversarial Examples with Input Diversity", arXiv ([PDF](https://arxiv.org/pdf/1803.06978.pdf))
-- Siyuan Qiao, Wei Shen, **Zhishuai Zhang**, Bo Wang, Alan Yuille, "Deep Co-Training for Semi-Supervised Image Recognition", arXiv ([PDF](https://arxiv.org/pdf/1803.05984.pdf))
 - Jianyu Wang, **Zhishuai Zhang**, Cihang Xie, Vittal Premachandran, Alan Yuille, "Unsupervised learning of object semantic parts from internal states of CNNs by population encoding", arXiv ([PDF](https://arxiv.org/pdf/1511.06855.pdf))
 <br /> 
 
 #### Conference papers
+- Siyuan Qiao, Wei Shen, **Zhishuai Zhang**, Bo Wang, Alan Yuille, "Deep Co-Training for Semi-Supervised Image Recognition", European Conference on Computer Vision (ECCV) 2018 ([PDF](https://arxiv.org/pdf/1803.05984.pdf))
 - Siyuan Qiao, **Zhishuai Zhang**, Wei Shen, Bo Wang, Alan Yuille, "Gradually Updated Neural Networks for Large-Scale Image Recognition", International Conference on Machine Learning (ICML) 2018 ([PDF](https://arxiv.org/pdf/1711.09280.pdf))
 - **Zhishuai Zhang**, Siyuan Qiao, Cihang Xie, Wei Shen, Bo Wang, Alan Yuille, "Single-Shot Object Detection with Enriched Semantics", Conference on Computer Vision and Pattern Recognition (CVPR) 2018 ([PDF](https://arxiv.org/pdf/1712.00433.pdf))
 - **Zhishuai Zhang\***, Cihang Xie\*, Jianyu Wang\*, Lingxi Xie, Alan Yuille (\*equal contribution), "DeepVoting: An Explainable Framework for Semantic Part Detection under Partial Occlusion", Conference on Computer Vision and Pattern Recognition (CVPR) 2018 ([PDF](https://arxiv.org/pdf/1709.04577.pdf))
