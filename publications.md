@@ -9,11 +9,11 @@ You can also browse my <a href="http://zzs.one/scholar" target="_blank">Google S
 #### Preprints
 - Yingwei Li, Song Bai, Yuyin Zhou, Cihang Xie, **Zhishuai Zhang**, Alan Yuille, "Learning Transferable Adversarial Examples via Ghost Networks", arXiv ([PDF](https://arxiv.org/pdf/1812.03413.pdf))
 - **Zhishuai Zhang**, Wei Shen, Siyuan Qiao, Yan Wang, Bo Wang, Alan Yuille, "Robust Face Detection via Learning Small Faces on Hard Images", arXiv ([PDF](https://arxiv.org/pdf/1811.11662.pdf))
-- Cihang Xie, **Zhishuai Zhang**, Jianyu Wang, Yuyin Zhou, Zhou Ren, Alan Yuille, "Improving Transferability of Adversarial Examples with Input Diversity", arXiv ([PDF](https://arxiv.org/pdf/1803.06978.pdf))
 - Jianyu Wang, **Zhishuai Zhang**, Cihang Xie, Vittal Premachandran, Alan Yuille, "Unsupervised learning of object semantic parts from internal states of CNNs by population encoding", arXiv ([PDF](https://arxiv.org/pdf/1511.06855.pdf))
 <br /> 
 
 #### Conference papers
+- Cihang Xie, **Zhishuai Zhang**, Jianyu Wang, Yuyin Zhou, Zhou Ren, Alan Yuille, "Improving Transferability of Adversarial Examples with Input Diversity",  Conference on Computer Vision and Pattern Recognition (CVPR) 2019 ([PDF](https://arxiv.org/pdf/1803.06978.pdf))
 - Siyuan Qiao, Wei Shen, **Zhishuai Zhang**, Bo Wang, Alan Yuille, "Deep Co-Training for Semi-Supervised Image Recognition", European Conference on Computer Vision (ECCV) 2018 ([PDF](https://arxiv.org/pdf/1803.05984.pdf))
 - Siyuan Qiao, **Zhishuai Zhang**, Wei Shen, Bo Wang, Alan Yuille, "Gradually Updated Neural Networks for Large-Scale Image Recognition", International Conference on Machine Learning (ICML) 2018 ([PDF](https://arxiv.org/pdf/1711.09280.pdf))
 - **Zhishuai Zhang**, Siyuan Qiao, Cihang Xie, Wei Shen, Bo Wang, Alan Yuille, "Single-Shot Object Detection with Enriched Semantics", Conference on Computer Vision and Pattern Recognition (CVPR) 2018 ([PDF](https://arxiv.org/pdf/1712.00433.pdf))
