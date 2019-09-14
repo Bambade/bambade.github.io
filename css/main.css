@@ -1,3 +1,4 @@
+@import url(autumn.css);
 @import url("pygment_highlights.css");
 
 /* --- General --- */
@@ -27,6 +28,9 @@ a {
 a:hover,
 a:focus {
   color: #0085a1;
+}
+li.spaced{
+  margin: 10px 0;
 }
 blockquote {
   color: #808080;
