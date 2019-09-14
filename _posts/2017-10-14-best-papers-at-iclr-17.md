@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Best Papers at ICLR 2017
-tags: ["deep learning"]
+tags: ["deep learning","conference summary"]
 mathjax: true
 ---
 
