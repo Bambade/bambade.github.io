@@ -3,7 +3,14 @@ layout: page
 title: Talks
 ---
 
-Here is a list of my talks and presentations:
+Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
+
+- **Transformer ASR with Contextual Block Processing**
+	[Paper](https://arxiv.org/pdf/1910.07204.pdf){: .btn} 
+	[Slides](/static/ppt/transformer_asr_contextual.pdf){: .btn}  
+	*Speech Technologies Reading Group*  
+	Hackerman 320, 3101 Wyman Park Dr, Baltimore  
+	November 04, 2019 
 
 - **Joint CTC-Attention for ASR using Multi-task Learning**
 	[Paper](https://arxiv.org/pdf/1609.06773.pdf){: .btn} 
