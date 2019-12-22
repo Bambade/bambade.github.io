@@ -146,7 +146,7 @@ This is borrowed directly from [Dan's reply](https://groups.google.com/d/msg/kal
 
 ### Using Kaldi vectors in Python
 
-Vectors such as i-vectors/x-vectors extracted using Kaldi can be used easily in Python. This may be useful for performing simple classification tasks or visualization purposes. We first write a Dataset loader class to read the vectors (Kaldi stores them as `ark` and `scp` files).
+Vectors such as i-vectors/x-vectors extracted using Kaldi can be used easily in Python using `kaldi_io`. This package is made by [Karel Vesely](https://github.com/vesis84/kaldi-io-for-python) and can be installed using: `python -m pip --user install kaldi_io`. This may be useful for performing simple classification tasks or visualization purposes. We first write a Dataset loader class to read the vectors (Kaldi stores them as `ark` and `scp` files).
 
 ```python
 import kaldi_io
