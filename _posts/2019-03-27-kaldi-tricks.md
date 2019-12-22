@@ -14,6 +14,7 @@ List of contents:
 3. [Checking training logs](#train-logs)
 4. [Converting between FV and FM types](#convert)
 5. [Number of epochs in Kaldi](#epochs)
+6. [Using Kaldi vectors in Python](#kaldi-python)
 
 ***
 
@@ -138,3 +139,71 @@ This is borrowed directly from [Dan's reply](https://groups.google.com/d/msg/kal
 > * We start with aligments learned from a GMM system, so the nnet doesn't have to do all the work of figuring out the alignments-- i.e. it's not training from a completely uninformed start.
 
 > So supposing we say we are using 5 epochs, we are really seeing the data more like 50 times, and if we didn't have those tricks (NG, model averaging) that might have to be more like 100 or 150 epochs, and without knowing the alignments, maybe 200 or 300 epochs.
+
+***
+
+<a name="kaldi-python"></a>
+
+### Using Kaldi vectors in Python
+
+Vectors such as i-vectors/x-vectors extracted using Kaldi can be used easily in Python. This may be useful for performing simple classification tasks or visualization purposes. We first write a Dataset loader class to read the vectors (Kaldi stores them as `ark` and `scp` files).
+
+```python
+import kaldi_io
+
+def read_as_dict(file):
+  utt2feat = {}
+  with open(file, 'r') as fh:
+    content = fh.readlines()
+  for line in content:
+    line = line.strip('\n')
+    utt2feat[line.split()[0]] = line.split()[1]
+  return utt2feat
+
+class SPKID_Dataset(Dataset):
+  # Loads i-vectors/x-vectors for the data
+  def __init__(self, vector_scp):
+    self.feat_list = self.read_scp(vector_scp)
+
+  def read_scp(self, vector_scp):
+    utt2scp = read_as_dict(vector_scp)
+    feat_list = []
+    for utt in utt2scp:
+      feat_list.append(utt2scp[utt])
+    return feat_list
+
+  def __len__(self):
+    return len(self.feat_list)
+
+  def __getitem__(self, idx):
+    feat = kaldi_io.read_mat(self.feat_list[idx])
+    return feat
+```
+
+This data loader class can now be used as below. First create a `dataset` object for the class by initializing it with the path to an `scp` file.
+
+```python
+import SPKID_Dataset
+
+dataset = SPKID_Dataset(args.vector_scp_file)
+```
+
+We can now create train and test batches, for example for training in PyTorch.
+
+```python
+import numpy as np
+from torch.utils.data import DataLoader
+from torch.utils.data.sampler import SubsetRandomSampler
+
+dataset_size = len(dataset)
+indices = list(range(dataset_size))
+np.random.shuffle(indices)
+split = int(np.floor(args.test_split * dataset_size))
+train_indices, test_indices = indices[split:], indices[:split]
+
+train_sampler = SubsetRandomSampler(train_indices)
+test_sampler = SubsetRandomSampler(test_indices)
+
+train_loader = DataLoader(dataset, batch_size=128, sampler=train_sampler)
+test_loader = DataLoader(dataset, batch_size=128, sampler=test_sampler)
+```
