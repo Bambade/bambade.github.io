@@ -5,6 +5,13 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **Imputer: Sequence Modeling via Imputation and Dynamic Programming**
+	[Paper](https://arxiv.org/pdf/2002.08926.pdf){: .btn} 
+	[Slides](/static/ppt/imputer.pdf){: .btn}  
+	*Speech Technologies Reading Group*  
+	Barton 225, 3101 Wyman Park Dr, Baltimore  
+	March 06, 2020 
+
 - **Transformer ASR with Contextual Block Processing**
 	[Paper](https://arxiv.org/pdf/1910.07204.pdf){: .btn} 
 	[Slides](/static/ppt/transformer_asr_contextual.pdf){: .btn}  
