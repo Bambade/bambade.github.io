@@ -15,6 +15,7 @@ List of contents:
 4. [Converting between FV and FM types](#convert)
 5. [Number of epochs in Kaldi](#epochs)
 6. [Using Kaldi vectors in Python](#kaldi-python)
+7. [Deploying Kaldi models](#kaldi-deploy)
 
 ***
 
@@ -207,3 +208,30 @@ test_sampler = SubsetRandomSampler(test_indices)
 train_loader = DataLoader(dataset, batch_size=128, sampler=train_sampler)
 test_loader = DataLoader(dataset, batch_size=128, sampler=test_sampler)
 ```
+***
+
+<a name="kaldi-deploy"></a>
+
+### How to deploy Kaldi models
+
+This is taken from [this answer](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/kaldi-help/Srx4v5vWR64/n-inzXF6AgAJ) on the kaldi-help Google group. Here are some available open source Kaldi deployment methods:
+
+1. [Kaldi's default TCP decoder](https://github.com/kaldi-asr/kaldi/blob/master/src/online2bin/online2-tcp-nnet3-decode-faster.cc): Reads in audio from a network socket and performs online decoding with ivector-based speaker adaptation.
+
+2. [Vosk server](https://github.com/alphacep/vosk-server) and [API](https://github.com/alphacep/vosk-api): The API is for Python, Android, and Node.
+
+3. [Kaldi Gstreamer server](https://github.com/alumae/kaldi-gstreamer-server): Real-time full-duplex speech recognition server, based on the Kaldi toolkit and the GStreamer framwork.
+
+4. [Vernacular AI's server](https://github.com/Vernacular-ai/kaldi-serve): https://github.com/Vernacular-ai/kaldi-serve
+
+5. [WebRTC server](https://github.com/danijel3/KaldiWebrtcServer): Python server for communicating with Kaldi from the browser using WebRTC
+
+6. [FastCGI](https://github.com/dialogflow/asr-server): FastCGI support for Kaldi, along with simple HTML-based client, that allows testing Kaldi speech recognitionfrom a web page.
+
+7. [Dragonfly](https://github.com/dictation-toolbox/dragonfly): Speech recognition framework allowing powerful Python-based scripting and extension of Dragon NaturallySpeaking (DNS), Windows Speech Recognition (WSR), Kaldi and CMU Pocket Sphinx. (Note that their Kaldi engine is under development)
+
+8. [Active Grammar](https://github.com/daanzu/kaldi-active-grammar): Python Kaldi speech recognition with grammars that can be set active/inactive dynamically at decode-time
+
+9. [Xdecoder](https://github.com/robin1001/xdecoder): (very old and not updated)
+
+10. [UHH's model server](https://github.com/uhh-lt/kaldi-model-server): Simple Kaldi model server for chain (nnet3) models in online recognition mode directly from a local microphone
