@@ -5,6 +5,12 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **CLSP Seminar Lightning Talk**
+	[Slides](/static/ppt/lightning_talk.pdf){: .btn} <br>
+	*CLSP Seminar*<br>
+	Zoom Video Conferencing<br>
+	April 03, 2020
+
 - **Imputer: Sequence Modeling via Imputation and Dynamic Programming**
 	[Paper](https://arxiv.org/pdf/2002.08926.pdf){: .btn} 
 	[Slides](/static/ppt/imputer.pdf){: .btn}  
