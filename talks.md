@@ -8,14 +8,14 @@ Here is a list of my talks and presentations (including presenting work by other
 - **Target Speaker - Voice Activity Detection**
 	[Paper](https://arxiv.org/abs/2005.07272){: .btn} 
 	[Slides](/static/ppt/ts-vad.pdf){: .btn}  
-	*Speech Technologies Reading Group*<br>  
-	Zoom Video Conferencing<br>
+	*Speech Technologies Reading Group*  
+	Zoom Video Conferencing  
 	May 29, 2020 
 
 - **CLSP Seminar Lightning Talk**
 	[Slides](/static/ppt/lightning_talk.pdf){: .btn} <br>
-	*CLSP Seminar*<br>
-	Zoom Video Conferencing<br>
+	*CLSP Seminar*  
+	Zoom Video Conferencing  
 	April 03, 2020
 
 - **Imputer: Sequence Modeling via Imputation and Dynamic Programming**
