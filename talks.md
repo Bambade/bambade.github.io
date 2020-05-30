@@ -9,13 +9,17 @@ Here is a list of my talks and presentations (including presenting work by other
 	[Paper](https://arxiv.org/abs/2005.07272){: .btn} 
 	[Slides](/static/ppt/ts-vad.pdf){: .btn}  
 	*Speech Technologies Reading Group*  
-	Zoom Video Conferencing  
 	May 29, 2020 
 
+- **The JHU Multi-Microphone Multi-Speaker ASR System for the CHiME-6 Challenge**
+	[Video](https://www.youtube.com/watch?v=BLK8YFNk7is&feature=youtu.be){: .btn}
+	[Slides](/static/ppt/chime6_slides.pdf){: .btn}   
+	*CHiME-6 Virtual Workshop*    
+	May 04, 2020
+
 - **CLSP Seminar Lightning Talk**
-	[Slides](/static/ppt/lightning_talk.pdf){: .btn} <br>
+	[Slides](/static/ppt/lightning_talk.pdf){: .btn}   
 	*CLSP Seminar*  
-	Zoom Video Conferencing  
 	April 03, 2020
 
 - **Imputer: Sequence Modeling via Imputation and Dynamic Programming**
