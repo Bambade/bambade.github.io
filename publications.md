@@ -6,6 +6,8 @@ title: Publications
 You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
+**2019**
+
 - **Probing the infomation encoded in x-vectors**  
 	**Desh Raj**, David Snyder, Daniel Povey, Sanjeev Khudanpur.  
 	*IEEE Workshop on Automatic Speech Recognition and Understanding* (ASRU) 2019.  
@@ -21,10 +23,14 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 	[Code](https://github.com/kaldi-asr/kaldi/tree/master/egs/bentham){: .btn}
 	[Blog]({% post_url 2018-11-22-subword-segmentation %}){: .btn}
 
+**2018**
+
 - **Uncertain fuzzy self-organization based clustering: interval type-2 approach to adaptive resonance theory**  
 	Shakaiba Majheed, Aditya Gupta, **Desh Raj**, Frank Chung-hoon Rhee.  
 	*Information Sciences*, 2018.  
 	[PDF](https://doi.org/10.1016/j.ins.2017.09.062){: .btn}
+
+**2017**
 
 - **Learning local and global contexts using a convolutional recurrent neural network for relation classification in biomedical text**  
 	**Desh Raj**, Sunil Kumar Sahu, Ashish Anand.  
