@@ -6,6 +6,15 @@ title: Publications
 You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
+**2020**
+
+- **The JHU multi-microphone multi-speaker ASR system for the CHiME-6 challenge**  
+	Ashish Arora, **Desh Raj**, Aswin Shanmugam Subramanian, Ke Li, Bar Benyair, Matthew Maciejewski, Piotr Zelasko, Paola Garcia, Shinji Watanabe, Sanjeev Khudanpur.  
+	*The 6th CHiME Workshop (at ICASSP 2020)*.  
+	[PDF](https://arxiv.org/abs/2006.07898){: .btn}
+	[Video](https://www.youtube.com/watch?v=BLK8YFNk7is&feature=youtu.be){: .btn}
+  	[Slides](https://chimechallenge.github.io/chime2020-workshop/presentations/CHiME_2020_slides_arora.pdf){: .btn}
+
 **2019**
 
 - **Probing the infomation encoded in x-vectors**  
