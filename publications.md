@@ -9,7 +9,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 **2020**
 
 - **The JHU multi-microphone multi-speaker ASR system for the CHiME-6 challenge**  
-	Ashish Arora, **Desh Raj**, Aswin Shanmugam Subramanian, Ke Li, Bar Benyair, Matthew Maciejewski, Piotr Zelasko, Paola Garcia, Shinji Watanabe, Sanjeev Khudanpur.  
+	Ashish Arora\*, **Desh Raj**\*, Aswin Shanmugam Subramanian\*, Ke Li\*, Bar Benyair, Matthew Maciejewski, Piotr Zelasko, Paola Garcia, Shinji Watanabe, Sanjeev Khudanpur.  
 	*The 6th CHiME Workshop (at ICASSP 2020)*.  
 	[PDF](https://arxiv.org/abs/2006.07898){: .btn}
 	[Video](https://www.youtube.com/watch?v=BLK8YFNk7is&feature=youtu.be){: .btn}
