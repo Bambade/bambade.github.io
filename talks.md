@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **Informed Target Speaker ASR** 
+	[Slides](/static/ppt/jsalt_final.pdf){: .btn}  
+	*JSALT 2020 Closing Presentation*  
+	August 06, 2020 
+
 - **Target Speaker - Voice Activity Detection**
 	[Paper](https://arxiv.org/abs/2005.07272){: .btn} 
 	[Slides](/static/ppt/ts-vad.pdf){: .btn}  
