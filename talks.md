@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **TS-ASR: Speaker Beam and Voice Filter**
+  [Slides](/static/ppt/ts_asr_reading_group.pdf){: .btn}
+  *Speech Technologies Reading Group*
+  October 02, 2020
+
 - **Informed Target Speaker ASR** 
 	[Slides](/static/ppt/jsalt_final.pdf){: .btn}  
 	*JSALT 2020 Closing Presentation*  
