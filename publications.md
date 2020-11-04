@@ -6,6 +6,36 @@ title: Publications
 You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
+**Preprints**
+
+- **Frustratingly easy noise-aware training of acoustic models**  
+	**Desh Raj**, Jesus Villalba, Daniel Povey, Sanjeev Khudanpur  
+	*Submitted to IEEE ICASSP 2021*  
+	[PDF](/static/preprint/icassp-21-noisevec.pdf){: .btn}
+
+
+**2021**
+
+- **Multi-class spectral clustering with overlaps for speaker diarization**  
+	**Desh Raj**, Zili Huang, Sanjeev Khudanpur  
+	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
+	[PDF](/static/preprint/slt-21-spectral.pdf){: .btn}
+
+- **DOVER-Lap: A method for combining overlap-aware diarization outputs**  
+	**Desh Raj**, Paola Garcia, Zili Huang, Shinji Watanabe, Daniel Povey, Andreas Stolcke, Sanjeev Khudanpur  
+	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
+	[PDF](/static/preprint/slt-21-doverlap.pdf){: .btn}
+	[Code](https://github.com/desh2608/dover-lap){: .btn}
+
+- **Integration of speech separation, diarization, and recognition for multi-speaker meetings: System description, comparison, and analysis**  
+	**Desh Raj**, Pavel Denisov, Zhuo Chen, Hakan Erdogan, Zili Huang, Maokui He, Shinji Watanabe, Jun Du, Takuya Yoshioka, Yi Luo, Naoyuki Kanda, Jinyu Li, Scott Wisdom, John R. Hershey  
+	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
+	[PDF](/static/preprint/slt-21-jsalt.pdf){: .btn}
+
+- **Sequential multi-frame neural beamforming for speech separation and enhancement**  
+	Zhong-Qiu Wang, Hakan Erdogan, Scott Wisdom, Kevin Wilson, **Desh Raj**, Shinji Watanabe, Zhuo Chen, John R. Hershey  
+	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
+
 **2020**
 
 - **The JHU multi-microphone multi-speaker ASR system for the CHiME-6 challenge**  
