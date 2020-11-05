@@ -11,7 +11,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Frustratingly easy noise-aware training of acoustic models**  
 	**Desh Raj**, Jesus Villalba, Daniel Povey, Sanjeev Khudanpur  
 	*Submitted to IEEE ICASSP 2021*  
-	[PDF](/static/preprint/icassp-21-noisevec.pdf){: .btn}
+	[PDF](https://arxiv.org/pdf/2011.02090){: .btn}
 
 
 **2021**
@@ -20,17 +20,19 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 	**Desh Raj**, Zili Huang, Sanjeev Khudanpur  
 	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
 	[PDF](/static/preprint/slt-21-spectral.pdf){: .btn}
+	[Code](/pages/overlap-aware-sc/){: .btn}
 
 - **DOVER-Lap: A method for combining overlap-aware diarization outputs**  
 	**Desh Raj**, Paola Garcia, Zili Huang, Shinji Watanabe, Daniel Povey, Andreas Stolcke, Sanjeev Khudanpur  
 	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
-	[PDF](/static/preprint/slt-21-doverlap.pdf){: .btn}
+	[PDF](https://arxiv.org/pdf/2011.01997){: .btn}
 	[Code](https://github.com/desh2608/dover-lap){: .btn}
 
 - **Integration of speech separation, diarization, and recognition for multi-speaker meetings: System description, comparison, and analysis**  
 	**Desh Raj**, Pavel Denisov, Zhuo Chen, Hakan Erdogan, Zili Huang, Maokui He, Shinji Watanabe, Jun Du, Takuya Yoshioka, Yi Luo, Naoyuki Kanda, Jinyu Li, Scott Wisdom, John R. Hershey  
 	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
-	[PDF](/static/preprint/slt-21-jsalt.pdf){: .btn}
+	[PDF](https://arxiv.org/pdf/2011.02014){: .btn}
+	[Code](/pages/jsalt/){: .btn}
 
 - **Sequential multi-frame neural beamforming for speech separation and enhancement**  
 	Zhong-Qiu Wang, Hakan Erdogan, Scott Wisdom, Kevin Wilson, **Desh Raj**, Shinji Watanabe, Zhuo Chen, John R. Hershey  
@@ -41,7 +43,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **The JHU multi-microphone multi-speaker ASR system for the CHiME-6 challenge**  
 	Ashish Arora\*, **Desh Raj**\*, Aswin Shanmugam Subramanian\*, Ke Li\*, Bar Benyair, Matthew Maciejewski, Piotr Zelasko, Paola Garcia, Shinji Watanabe, Sanjeev Khudanpur.  
 	*The 6th CHiME Workshop (at ICASSP 2020)*.  
-	[PDF](https://arxiv.org/abs/2006.07898){: .btn}
+	[PDF](https://arxiv.org/pdf/2006.07898){: .btn}
 	[Video](https://www.youtube.com/watch?v=BLK8YFNk7is&feature=youtu.be){: .btn}
   	[Slides](https://chimechallenge.github.io/chime2020-workshop/presentations/CHiME_2020_slides_arora.pdf){: .btn}
 
@@ -50,7 +52,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Probing the infomation encoded in x-vectors**  
 	**Desh Raj**, David Snyder, Daniel Povey, Sanjeev Khudanpur.  
 	*IEEE Workshop on Automatic Speech Recognition and Understanding* (ASRU) 2019.  
-	[PDF](http://arxiv.org/abs/1909.06351){: .btn}
+	[PDF](http://arxiv.org/pdf/1909.06351){: .btn}
 	[Code](https://github.com/desh2608/kaldi/commit/43cfc9d515b94b321acccae51bf39988dafbbef7){: .btn}
   	[Poster](/static/poster/asru-19-poster.pdf){: .btn}
 
