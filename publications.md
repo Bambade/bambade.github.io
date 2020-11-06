@@ -19,7 +19,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Multi-class spectral clustering with overlaps for speaker diarization**  
 	**Desh Raj**, Zili Huang, Sanjeev Khudanpur  
 	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
-	[PDF](/static/preprint/slt-21-spectral.pdf){: .btn}
+	[PDF](https://arxiv.org/pdf/2011.02900.pdf){: .btn}
 	[Code](/pages/overlap-aware-sc/){: .btn}
 
 - **DOVER-Lap: A method for combining overlap-aware diarization outputs**  
