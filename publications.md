@@ -21,18 +21,21 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
 	[PDF](https://arxiv.org/pdf/2011.02900.pdf){: .btn}
 	[Code](/pages/overlap-aware-sc/){: .btn}
+	[Slides](/static/ppt/slt21_spectral_slides.pdf){: .btn}
 
 - **DOVER-Lap: A method for combining overlap-aware diarization outputs**  
 	**Desh Raj**, Paola Garcia, Zili Huang, Shinji Watanabe, Daniel Povey, Andreas Stolcke, Sanjeev Khudanpur  
 	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
 	[PDF](https://arxiv.org/pdf/2011.01997){: .btn}
 	[Code](https://github.com/desh2608/dover-lap){: .btn}
+	[Slides](/static/ppt/slt21_doverlap_slides.pdf){: .btn}
 
 - **Integration of speech separation, diarization, and recognition for multi-speaker meetings: System description, comparison, and analysis**  
 	**Desh Raj**, Pavel Denisov, Zhuo Chen, Hakan Erdogan, Zili Huang, Maokui He, Shinji Watanabe, Jun Du, Takuya Yoshioka, Yi Luo, Naoyuki Kanda, Jinyu Li, Scott Wisdom, John R. Hershey  
 	*IEEE Spoken Language Technology (SLT) Workshop 2021*  
 	[PDF](https://arxiv.org/pdf/2011.02014){: .btn}
 	[Code](/pages/jsalt/){: .btn}
+	[Slides](/static/ppt/slt21_jsalt_slides.pdf){: .btn}
 
 - **Sequential multi-frame neural beamforming for speech separation and enhancement**  
 	Zhong-Qiu Wang, Hakan Erdogan, Scott Wisdom, Kevin Wilson, **Desh Raj**, Shinji Watanabe, Zhuo Chen, John R. Hershey  
