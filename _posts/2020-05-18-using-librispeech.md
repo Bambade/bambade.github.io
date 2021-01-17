@@ -22,10 +22,17 @@ From a barebones perspective, you only need a directory `data/<your-data-dir>` c
 2. `utt2spk`: List of utterance ids and corresponding speaker ids. If you don't have speaker information, you can just replicate the utt-id as the spk-id.
 3. `text`: The transcriptions for the utterances. This will be needed to score your decoding output. 
 
-For our WSJ example, I will decode the `dev93` and `eval92` subsets. So first I need to prepare these. After preparing, your directory would look like this:
+For our WSJ example, I will decode the `dev93` and `eval92` subsets. So first I need to prepare these. 
+Set `wsj0` and `wsj1` as the paths to the downloaded LDC corpora WSJ0 and WSJ1, and then run:
 
 ```console
-foo@bar:~kaldi/egs/wsj/s5$ tree data
+foo@bar:~kaldi/egs/wsj/s5$ local/wsj_data_prep.sh $wsj0/??-{?,??}.? $wsj1/??-{?,??}.?
+```
+
+After preparing, your directory would look like this:
+
+```console
+foo@bar:~kaldi/egs/wsj/s5$ tree data/test*
 data
 ├── test_dev93
 │   ├── spk2utt
@@ -102,39 +109,32 @@ Now we are ready to download and use the pre-trained model!
 
 ## Downloading the pre-trained model
 
-The pre-trained Librispeech model can be downloaded as follows:
+The following models are available in the [LibriSpeech kit](http://kaldi-asr.org/models/m13):
+
+  1. TDNN-F chain model
+  2. i-vector extractor
+  3. Language models (pruned 3-gram and RNNLM)
 
 ```console
-foo@bar:~kaldi/egs/wsj/s5$ wget http://kaldi-asr.org/models/13/0013_librispeech_s5.tar.gz
+foo@bar:~kaldi/egs/wsj/s5$ wget http://kaldi-asr.org/models/13/0013_librispeech_v1_chain.tar.gz
+foo@bar:~kaldi/egs/wsj/s5$ wget http://kaldi-asr.org/models/13/0013_librispeech_v1_extractor.tar.gz
+foo@bar:~kaldi/egs/wsj/s5$ wget http://kaldi-asr.org/models/13/0013_librispeech_v1_lm.tar.gz
 ```
 
-The total download size is 1.1G, so it can take a while depending on your bandwidth. Once it has finished downloading, we extract it and inspect its contents.
+Once they have finished downloading, we extract them. By default, the contents
+will get extracted to the `data` and `exp` directories.
 
 ```console
-foo@bar:~kaldi/egs/wsj/s5$ tar -xvzf 0013_librispeech_s5.tar.gz
-foo@bar:~kaldi/egs/wsj/s5$ tree 0013_librispeech_v1/ -L 2
-0013_librispeech_v1/
-├── data
-│   ├── lang_chain
-│   ├── lang_test_tglarge
-│   ├── lang_test_tgmed
-│   └── lang_test_tgsmall
-├── exp
-│   ├── chain_cleaned
-│   └── nnet3_cleaned
-└── README.txt
+foo@bar:~kaldi/egs/wsj/s5$ tar -xvzf 0013_librispeech_v1_chain.tar.gz
+foo@bar:~kaldi/egs/wsj/s5$ tar -xvzf 0013_librispeech_v1_extractor.tar.gz
+foo@bar:~kaldi/egs/wsj/s5$ tar -xvzf 0013_librispeech_v1_lm.tar.gz
 ```
 
-The first thing to note is that 3 different trigram (tg) language models are provided: small, medium, and large. The reason is that we usually decode with a smaller LM and then rescore the decoding lattice with a medium or large LM. We'll do the same in this tutorial. 
+We have provided 2 language models: `tgsmall` (small trigram model) and `rnnlm` (LSTM-based), both
+of which are trained on the LibriSpeech training transcriptions. We will use the `tgsmall` model
+for decoding and the RNNLM for rescoring.
 
-The `exp/chain_cleaned` directory contains the pre-trained chain model, and the `exp/nnet3_cleaned` contains the ivector extractor.
-
-Copy the LM, acoustic model, and i-vector extractor to `data` and `exp` directories.
-
-```console
-foo@bar:~kaldi/egs/wsj/s5$ cp -r 0013_librispeech_v1/data/lang_test* data/
-foo@bar:~kaldi/egs/wsj/s5$ cp -r 0013_librispeech_v1/exp .
-```
+The `exp/chain_cleaned` directory contains the pre-trained chain model, and the `exp/nnet3_cleaned` contains the ivector extractor. Now we are ready for decoding.
 
 ## Using the model for decoding
 
@@ -142,7 +142,7 @@ We will do the following:
 
 1. Extract i-vectors for the test data
 2. Decode using the small trigram LM
-3. Rescore using the medium and large trigram LMs
+3. Rescore using the RNNLM
 
 
 #### Extracting i-vectors
@@ -198,24 +198,31 @@ foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_t
 
 As a comparison, a model trained on the WSJ training data, and using a matched LM gives ~6.9% WER on both dev and eval at this stage. 
 
-We now rescore using the medium and large trigram LMs.
+#### Rescoring
+
+We now rescore using the RNNLM. Note that if your directory does not contain an `rnnlm` symlink, you can create it
+using `ln -s ../../../scripts/rnnlm .`.
 
 ```console
+foo@bar:~kaldi/egs/wsj/s5$ export decode_cmd="queue.pl --mem 2G"
 foo@bar:~kaldi/egs/wsj/s5$ for decode_set in test_dev93 test_eval92; do
-  steps/lmrescore.sh --cmd "$decode_cmd" --self-loop-scale 1.0 data/lang_test_{tgsmall,tgmed} \
-    data/${decode_set}_hires $dir/decode_${decode_set}_{tgsmall,tgmed}
-  steps/lmrescore_const_arpa.sh --cmd "$decode_cmd" data/lang_test_{tgsmall,tglarge} \
-    data/${decode_set}_hires $dir/decode_${decode_set}_{tgsmall,tglarge}
+    decode_dir=exp/chain_cleaned/tdnn_1d_sp/decode_${decode_set}_tgsmall;
+    rnnlm/lmrescore_pruned.sh \
+        --cmd "$decode_cmd --mem 8G" \
+        --weight 0.45 --max-ngram-order 4 \
+        data/lang_test_tgsmall exp/rnnlm_lstm_1a \
+        data/${decode_set}_hires ${decode_dir} \
+        exp/chain_cleaned/tdnn_1d_sp/decode_${decode_set}_rescore
 done
 ```
 
-Again, we score the decoded sets.
+The scoring is included in the `lmrescore_pruned.sh` script.
 
 ```console
-foo@bar:~kaldi/egs/wsj/s5$ for decode_set in test_dev93 test_eval92; do
-  steps/score_kaldi.sh --cmd "run.pl" data/${decode_set}_hires data/lang_test_tgmed $dir/decode_${decode_set}_tgmed
-  steps/score_kaldi.sh --cmd "run.pl" data/${decode_set}_hires data/lang_test_tglarge $dir/decode_${decode_set}_tglarge
-done
+foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_rescore/scoring_kaldi/best_wer
+%WER 11.96 [ 675 / 5643, 149 ins, 14 del, 512 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_rescore/wer_17_1.0
+foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_rescore/scoring_kaldi/best_wer
+%WER 15.81 [ 1302 / 8234, 280 ins, 60 del, 962 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_rescore/wer_17_1.0
 ```
 
 Finally, the obtained WERs are shown in the table below:
@@ -223,6 +230,4 @@ Finally, the obtained WERs are shown in the table below:
 | System  | test_dev93 | test_eval92 |
 |---------|------------|-------------|
 | tgsmall | 18.47      | 14.14       |
-| tgmed   | 18.32      | 13.81       |
-| tglarge | 17.51      | 13.18       |
-
+| rnnlm   | 15.81      | 11.96       |
