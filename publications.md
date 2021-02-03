@@ -6,15 +6,12 @@ title: Publications
 You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
-**Preprints**
-
-- **Frustratingly easy noise-aware training of acoustic models**  
-	**Desh Raj**, Jesus Villalba, Daniel Povey, Sanjeev Khudanpur  
-	*Submitted to IEEE ICASSP 2021*  
-	[PDF](https://arxiv.org/pdf/2011.02090){: .btn}
-
-
 **2021**
+
+- **The Hitachi-JHU DIHARD III system: Competitive end-to-end neural diarization and x-vector clustering systems combined by DOVER-Lap**  
+  Shota Horiguchi, Nelson Yalta, Paola Garcia, Yuki Takashima, Yawen Xue, **Desh Raj**, Zili Huang, Yusuke Fujita, Shinji Watanabe, Sanjeev Khudanpur  
+  *Third DIHARD Speech Diarization Challenge*  
+  [PDF](https://arxiv.org/pdf/2102.01363.pdf){: .btn}
 
 - **Multi-class spectral clustering with overlaps for speaker diarization**  
 	**Desh Raj**, Zili Huang, Sanjeev Khudanpur  
@@ -43,6 +40,11 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 	[PDF](https://arxiv.org/pdf/1911.07953.pdf){: .btn}
 
 **2020**
+
+- **Frustratingly easy noise-aware training of acoustic models**  
+	**Desh Raj**, Jesus Villalba, Daniel Povey, Sanjeev Khudanpur  
+	*ArXiv, 2020*  
+	[PDF](https://arxiv.org/pdf/2011.02090){: .btn}
 
 - **The JHU multi-microphone multi-speaker ASR system for the CHiME-6 challenge**  
 	Ashish Arora\*, **Desh Raj**\*, Aswin Shanmugam Subramanian\*, Ke Li\*, Bar Benyair, Matthew Maciejewski, Piotr Zelasko, Paola Garcia, Shinji Watanabe, Sanjeev Khudanpur.  
