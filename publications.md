@@ -45,6 +45,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 	**Desh Raj**, Jesus Villalba, Daniel Povey, Sanjeev Khudanpur  
 	*ArXiv, 2020*  
 	[PDF](https://arxiv.org/pdf/2011.02090){: .btn}
+  [Code](https://github.com/desh2608/kaldi-noise-vectors){: .btn}
 
 - **The JHU multi-microphone multi-speaker ASR system for the CHiME-6 challenge**  
 	Ashish Arora\*, **Desh Raj**\*, Aswin Shanmugam Subramanian\*, Ke Li\*, Bar Benyair, Matthew Maciejewski, Piotr Zelasko, Paola Garcia, Shinji Watanabe, Sanjeev Khudanpur.  
