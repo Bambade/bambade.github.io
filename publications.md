@@ -98,7 +98,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 	*IEEE Transactions on Fuzzy Systems*, 2017.  
 	[PDF](http://ieeexplore.ieee.org/document/7888454/){: .btn}
 
-
+<!-- 
 **Non-refereed project reports:**
 
 - **Desh Raj**. *Semi-implicit variational inference for unsupervised acoustic unit discovery*.
@@ -117,6 +117,6 @@ Congressional 2016 elections*.
 - **Desh Raj**, Sumeet Ranka, Siddharth Kumar, Akashdeep Goswami, Samyak Kumbhalwar. *Spatial transformer networks*.
 	[PDF](/static/report/stn.pdf){: .btn}
 
-<br /> 
+<br />  -->
 
 
