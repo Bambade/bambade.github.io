@@ -5,10 +5,9 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
-- **Overlap-aware Speaker Diarization: New Methods and Ensembles** 
-  [Slides](/static/ppt/clsp_seminar_talk.pdf){: .btn}  
-  *CLSP Seminar*  
-  January 29, 2021
+- **Overlap-aware Speaker Diarization: Methods and Ensembles**  
+  *ISCA SIG-ML Seminar* (May 05, 2021): [Video](https://www.youtube.com/watch?v=SHWNqU9g_hU){: .btn} [Slides](/static/ppt/isca_sigml_desh.pdf){: .btn}  
+  *CLSP Seminar* (January 29, 2021): [Slides](/static/ppt/clsp_seminar_talk.pdf){: .btn}  
 
 - **TS-ASR: Speaker Beam and Voice Filter**
   [Slides](/static/ppt/ts_asr_reading_group.pdf){: .btn}  
