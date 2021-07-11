@@ -11,13 +11,13 @@ Transformers are ubiquitous in deep learning today. First proposed in the famous
 
 The workhorse of the transformer architecture is the multi-head self-attention (MHSA) layer. Here, "self-attention" is a way of routing information in a sequence using the same sequence as the guiding mechanism (hence the "self"), and when this process is repeated several times, i.e., for many "heads", it is called MHSA. I will not go into details about the transformer in this post --- it has already been covered in much visual detail by [Jay Alammar](https://jalammar.github.io/illustrated-transformer/) and annotated with code by [Sasha Rush](https://nlp.seas.harvard.edu/2018/04/03/attention.html). Yannic Kilcher has also covered the paper in his [Papers Explained](https://www.youtube.com/watch?v=iDulhoQ2pro) series. If you are not familiar with the model or with self-attention in general, I would suggest that you check out those links before reading further.
 
-Self-attention is simply a method to transform an input sequence using signals from the same sequence. Suppose we have an input sequence $$\mathbf{x}$$ of length $$n$$, where each element in the sequence is a $$d$$-dimensional vector. Such a sequence may occur in NLP as a sequence of word embeddings, or in speech as a short-term Fourier transform of an audio. Self-attention uses 3 embedding matrices --- namely $$W_Q$$, $$W_K$$, and $$W_V$$ --- to obtain queries ($$Q$$), keys ($$K$$), and values ($$V$$) matrices for the sequence $$\mathbf{x}$$. For simplicity, we will assume that all these matrices are $$n \times d$$, although they may have different dimensionalities (except keys and queries, which are constrained to have the same dimensionality). Then, self-attention computes the following transformation:
+Self-attention is simply a method to transform an input sequence using signals from the same sequence. Suppose we have an input sequence $\mathbf{x}$ of length $n$, where each element in the sequence is a $d$-dimensional vector. Such a sequence may occur in NLP as a sequence of word embeddings, or in speech as a short-term Fourier transform of an audio. Self-attention uses 3 embedding matrices --- namely $W_Q$, $W_K$, and $W_V$ --- to obtain queries ($Q$), keys ($K$), and values ($V$) matrices for the sequence $\mathbf{x}$. For simplicity, we will assume that all these matrices are $n \times d$, although they may have different dimensionalities (except keys and queries, which are constrained to have the same dimensionality). Then, self-attention computes the following transformation:
 
 $$ SA(Q,K,V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d}} \right)V. $$
 
-Here, the `softmax` operation is applied per-row of the $$QK^T$$ matrix, which is of size $$n \times n$$. Clearly, this operation requires $$\mathcal{O}(n^2)$$ time and memory. Intuitively, this is because every item in the sequence computes its attention with every other item, which leads to the quadratic complexity. This idea of all-pairs-attention is both a boon and a curse for the transformer architecture. On the one hand, it provides a way to channel global context information without forgetting the history, as is common in recurrent architectures. This global context also makes it stronger than convolutional models, which can only attend to a local context. However, the quadratic complexity makes it hard to use transformers for long sequences. In modality-specific tasks, such as speech, researchers have tried to bypass this issue by first using convolutional layers to downsample the sequence (see [my post on using transformers in ASR]({% post_url 2020-01-08-transformer-asr %})).
+Here, the `softmax` operation is applied per-row of the $QK^T$ matrix, which is of size $n \times n$. Clearly, this operation requires $\mathcal{O}(n^2)$ time and memory. Intuitively, this is because every item in the sequence computes its attention with every other item, which leads to the quadratic complexity. This idea of all-pairs-attention is both a boon and a curse for the transformer architecture. On the one hand, it provides a way to channel global context information without forgetting the history, as is common in recurrent architectures. This global context also makes it stronger than convolutional models, which can only attend to a local context. However, the quadratic complexity makes it hard to use transformers for long sequences. In modality-specific tasks, such as speech, researchers have tried to bypass this issue by first using convolutional layers to downsample the sequence (see [my post on using transformers in ASR]({% post_url 2020-01-08-transformer-asr %})).
 
-There has been a long line of research on making transformers "efficient" --- too long, in fact, to be covered in one blog post. [This paper](https://arxiv.org/abs/2009.06732) provides a great review of these methods. In this post, I will focus on methods which make the self-attention mechanism linear, i.e., they reduce the complexity from $$\mathcal{O}(n^2)$$ to $$\mathcal{O}(n)$$. Most of these methods can be grouped under one of the following 3 categories:
+There has been a long line of research on making transformers "efficient" --- too long, in fact, to be covered in one blog post. [This paper](https://arxiv.org/abs/2009.06732) provides a great review of these methods. In this post, I will focus on methods which make the self-attention mechanism linear, i.e., they reduce the complexity from $\mathcal{O}(n^2)$ to $\mathcal{O}(n)$. Most of these methods can be grouped under one of the following 3 categories:
 
 1. Methods based on low-rank approximation
 2. Methods based on local-global attention
@@ -27,37 +27,37 @@ In the remaining part of this post, I will discuss papers falling under each of 
 
 ## Methods based on low-rank approximation
 
-In the case of multi-head self-attention, the embedding dimensionality $$d$$ for $$Q$$ and $$K$$ gets further divided among the different heads, resulting in matrices which are actually of even lower rank ($$\frac{d}{4}$$ or $$\frac{d}{8}$$ for 4 and 8 heads, respectively). The matrix multiplication $$QK^T$$, then, is also of this lower rank. This observation is used by several papers to avoid computing the full $$n^2$$ matrix, and instead approximate it by multiplying lower rank matrices.
+In the case of multi-head self-attention, the embedding dimensionality $d$ for $Q$ and $K$ gets further divided among the different heads, resulting in matrices which are actually of even lower rank ($\frac{d}{4}$ or $\frac{d}{8}$ for 4 and 8 heads, respectively). The matrix multiplication $QK^T$, then, is also of this lower rank. This observation is used by several papers to avoid computing the full $n^2$ matrix, and instead approximate it by multiplying lower rank matrices.
 
 ### [Linformer: self-attention with linear complexity](https://arxiv.org/abs/2006.04768)
 
-Linformer was perhaps the first paper which used the above observation to linearize self-attention. Suppose we represent $$\text{softmax}\left( \frac{QK^T}{\sqrt{d}} \right)$$ as $$P$$. The authors first made empirical investigations which suggest that $$P$$ is low-rank. (Note that $$P$$ is not guaranteed to be low-rank since it includes the `softmax` operation on the low-rank $$QK^T$$ matrix). In the following figure taken from the paper, we can see that most of the information in $$P$$ is concentrated in a few eigenvalues, as suggested by the steep cumulative sum curve. Furthermore, the deeper the layer, the lower is the empirical rank of the self-attention matrix, as seen in the figure on the right.
+Linformer was perhaps the first paper which used the above observation to linearize self-attention. Suppose we represent $\text{softmax}\left( \frac{QK^T}{\sqrt{d}} \right)$ as $P$. The authors first made empirical investigations which suggest that $P$ is low-rank. (Note that $P$ is not guaranteed to be low-rank since it includes the `softmax` operation on the low-rank $QK^T$ matrix). In the following figure taken from the paper, we can see that most of the information in $P$ is concentrated in a few eigenvalues, as suggested by the steep cumulative sum curve. Furthermore, the deeper the layer, the lower is the empirical rank of the self-attention matrix, as seen in the figure on the right.
 
 ![](/static/img/linear_transformers/linformer-1.png)
 
-The authors then used the [Johnson–Lindenstrauss lemma](https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma) to claim that there exists a low-rank matrix $$\tilde{P}$$ which can approximate $$P$$ with very low error. Intuitively, this works because when computing the self-attention matrix, we are only interested in the pairwise distances between points. The JL-lemma simply says that:
+The authors then used the [Johnson–Lindenstrauss lemma](https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma) to claim that there exists a low-rank matrix $\tilde{P}$ which can approximate $P$ with very low error. Intuitively, this works because when computing the self-attention matrix, we are only interested in the pairwise distances between points. The JL-lemma simply says that:
 
 > If we use a random projection matrix to project a set of points onto a lower dimension, the pairwise distances are approximately preserved.
 
-To put theory into practice, the authors projected $$K$$ and $$V$$ using a $$k\times n$$ projection matrix to obtain $$\tilde{K}$$ and $$\tilde{V}$$. The product $$QK^T$$ is now of order $$n\times k$$, and the final output is still $$n\times d$$. The Linformer architecture is shown below:
+To put theory into practice, the authors projected $K$ and $V$ using a $k\times n$ projection matrix to obtain $\tilde{K}$ and $\tilde{V}$. The product $QK^T$ is now of order $n\times k$, and the final output is still $n\times d$. The Linformer architecture is shown below:
 
 <center><img src="/static/img/linear_transformers/linformer-2.png" style="width:300px;" /></center>
 
-The only remaining question is how to choose an appropriate $$k$$. Theorem 2 in the paper suggests $$k=\Theta(d\log d)$$, and proves that for this choice of $$k$$, there exists projection matrices for which the low-rank approximation holds.
+The only remaining question is how to choose an appropriate $k$. Theorem 2 in the paper suggests $k=\Theta(d\log d)$, and proves that for this choice of $k$, there exists projection matrices for which the low-rank approximation holds.
 
 ### [Nystromformer: a Nystrom-based algorithm for approximating self-attention](https://arxiv.org/abs/2102.03902)
 
-This paper also uses the low-rank observation, but instead of using JL projections, it uses the Nystrom approximation for approximating $$P$$. Suppose $$P$$ is approximately of rank $$m$$, where $$m < n$$. Then, we can approximate $$P$$ with the following matrix:
+This paper also uses the low-rank observation, but instead of using JL projections, it uses the Nystrom approximation for approximating $P$. Suppose $P$ is approximately of rank $m$, where $m < n$. Then, we can approximate $P$ with the following matrix:
 
 $$ \tilde{P} = \begin{bmatrix} A & B\\ F & FA^+B \end{bmatrix} = \begin{bmatrix}A\\F\end{bmatrix} A^{+} \begin{bmatrix}A & B\end{bmatrix}, $$
 
-where $$A$$ is an $$m\times m$$ matrix consisting of $$m$$ rows of $$P$$ (where the rows are chosen according to some scheme), and $$A^{+}$$ is the Moore-Penrose pseudoinverse of $$A$$. Each of the computations is now with lower-dimensional matrices linear in $$n$$. However, there is a caveat: to compute $$A$$, we still need to first compute $$P$$, because of the `softmax` operation (elements of $$A$$ are normalized by the sum of the entire row in $$P$$). This defeats the purpose of the approximation, since we were doing it in the first place to avoid computing $$P$$.
+where $A$ is an $m\times m$ matrix consisting of $m$ rows of $P$ (where the rows are chosen according to some scheme), and $A^{+}$ is the Moore-Penrose pseudoinverse of $A$. Each of the computations is now with lower-dimensional matrices linear in $n$. However, there is a caveat: to compute $A$, we still need to first compute $P$, because of the `softmax` operation (elements of $A$ are normalized by the sum of the entire row in $P$). This defeats the purpose of the approximation, since we were doing it in the first place to avoid computing $P$.
 
-The workaround suggested in the paper is to perform the approximation _inside_ the `softmax`, and then apply the `softmax` operation on the approximated matrix. In summary, suppose $$\tilde{Q}$$ and $$\tilde{K}$$ denote the $$m$$-rows of $$Q$$ and $$K$$, respectively. Then, the method approximates as follows:
+The workaround suggested in the paper is to perform the approximation _inside_ the `softmax`, and then apply the `softmax` operation on the approximated matrix. In summary, suppose $\tilde{Q}$ and $\tilde{K}$ denote the $m$-rows of $Q$ and $K$, respectively. Then, the method approximates as follows:
 
 $$ \text{softmax}\left(QK^T\right) = \text{softmax}\left(Q\tilde{K}^T\right) \times \text{softmax}\left(\tilde{Q}\tilde{K}^T\right)^{+} \times \text{softmax}\left(\tilde{Q}K^T\right). $$
 
-The $$m$$ rows are formed by using _segmental means_, i.e., dividing all rows into segments and taking the mean of each segment as a row. The entire computation pipeline of the Nystromformer is shown in the below figure taken from the paper:
+The $m$ rows are formed by using _segmental means_, i.e., dividing all rows into segments and taking the mean of each segment as a row. The entire computation pipeline of the Nystromformer is shown in the below figure taken from the paper:
 
 ![](/static/img/linear_transformers/nystromformer-1.png)
 
@@ -71,7 +71,7 @@ The idea behind longformer can most easily be understood from the following figu
 
 ![](/static/img/linear_transformers/longformer-1.png)
 
-Figure (a) shows the self-attention pattern in the standard transformer. If we restrict each item to only attend to a window of size $$w$$, this is the windowed attention pattern in (b). It is similar to convolutions, and hence suffers from lack of global context. The context can be extended without increasing computation by using a dilated attention, as in figure (c). The actual longformer uses task-specific global attention in addition to windowed or dilated attention in each layer, as shown in (d). The elements which get this "global" attention are chosen based on the task ---  for example, the `[CLS]` token is used for global attention in classification tasks, while for QA, all the question tokens receive global attention.
+Figure (a) shows the self-attention pattern in the standard transformer. If we restrict each item to only attend to a window of size $w$, this is the windowed attention pattern in (b). It is similar to convolutions, and hence suffers from lack of global context. The context can be extended without increasing computation by using a dilated attention, as in figure (c). The actual longformer uses task-specific global attention in addition to windowed or dilated attention in each layer, as shown in (d). The elements which get this "global" attention are chosen based on the task ---  for example, the `[CLS]` token is used for global attention in classification tasks, while for QA, all the question tokens receive global attention.
 
 An important detail in the Longformer paper is the implementation of such an attention pattern. The authors provide a custom CUDA kernel to implement such "banded" matrix multiplication, since it cannot be naturally implemented using existing functions in PyTorch or Tensorflow. Their implementation is available [here](https://github.com/allenai/longformer).
 
@@ -90,7 +90,7 @@ Overall, the random tokens is what makes BigBird different from Longformer, but 
 
 ### [Long-short transformer: efficient transformers for language and vision](https://arxiv.org/abs/2107.02192)
 
-This paper combines a short-term attention and a long-range attention. Their short-term attention is simply the sliding window attention pattern that we have seen previously in Longformer and BigBird. The long-range attention is similar to the low-rank projection idea that was used in Linformer, but with a small change. In Linformer, the key and value matrices $$K$$ and $$V$$ were projected using a projection matrix $$P \in \mathbb{R}^{n\times r}$$ that was learned in training, and was the same for all sequences. In this paper, the matrix $$P$$ is "dynamic", and depends on the keys $$K$$ as $$P = \text{softmax}(KW^P)$$, where $$W^P$$ is a $$d\times r$$ matrix with learnable parameters. This means that a different projection matrix is used for each sequence, and the authors claim that this makes it more robust to insertions, deletions, paraphrasing, etc. The short-term and long-range attentions are then concatenated through a dual layernorm (to rescale them) to obtain the final attention matrix. This entire mechanism is shown in the following figure taken from the paper:
+This paper combines a short-term attention and a long-range attention. Their short-term attention is simply the sliding window attention pattern that we have seen previously in Longformer and BigBird. The long-range attention is similar to the low-rank projection idea that was used in Linformer, but with a small change. In Linformer, the key and value matrices $K$ and $V$ were projected using a projection matrix $P \in \mathbb{R}^{n\times r}$ that was learned in training, and was the same for all sequences. In this paper, the matrix $P$ is "dynamic", and depends on the keys $K$ as $P = \text{softmax}(KW^P)$, where $W^P$ is a $d\times r$ matrix with learnable parameters. This means that a different projection matrix is used for each sequence, and the authors claim that this makes it more robust to insertions, deletions, paraphrasing, etc. The short-term and long-range attentions are then concatenated through a dual layernorm (to rescale them) to obtain the final attention matrix. This entire mechanism is shown in the following figure taken from the paper:
 
 ![](/static/img/linear_transformers/ls-transformer-1.png)
 
@@ -100,29 +100,29 @@ Both the categories we have seen previously used some prior inductive biases abo
 
 $$ SA(Q,K,V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d}} \right)V $$
 
-In the above equation, the $$SA$$ function transformers $$Q$$, $$K$$, and $$V$$ into a sequence of output tokens, say $$V'$$. We can also write this equivalently as
+In the above equation, the $SA$ function transformers $Q$, $K$, and $V$ into a sequence of output tokens, say $V'$. We can also write this equivalently as
 
 $$ V_i^{\prime} = \frac{\sum_{j=1}^{N}\text{sim}(Q_i,K_j)V_j}{\sum_{j=1}^N \text{sim}(Q_i,K_j)}, $$
 
-where $$ \text{sim}(Q_i, K_j) = \frac{\text{exp}(Q_iK_j)}{\sqrt{d}}.$$ Here `sim` is just a similarity function between query $$i$$ and key $$j$$, and we can choose any __kernel__ function for this purpose. Usually, in machine learning, kernel functions are used to avoid explicitly computing coordinates in high-dimensions, but in this case, we will use them in the other direction.
+where $ \text{sim}(Q_i, K_j) = \frac{\text{exp}(Q_iK_j)}{\sqrt{d}}.$ Here `sim` is just a similarity function between query $i$ and key $j$, and we can choose any __kernel__ function for this purpose. Usually, in machine learning, kernel functions are used to avoid explicitly computing coordinates in high-dimensions, but in this case, we will use them in the other direction.
 
-Since $$\text{sim}$$ is a kernel, there exists some mapping $$\phi$$ such that
+Since $\text{sim}$ is a kernel, there exists some mapping $\phi$ such that
 
 $$ \text{sim}(Q_i, K_j) = \phi(Q_i)^T \phi(K_j). $$
 
-Using the above decomposition, we can rewrite $$ V_i^{\prime}$$ as
+Using the above decomposition, we can rewrite $ V_i^{\prime}$ as
 
 $$ V_i^{\prime} = \frac{\sum_{j=1}^{N}\phi(Q_i)^T \phi(K_j) V_j}{\sum_{j=1}^N \phi(Q_i)^T \phi(K_j)}. $$
 
-Now, we can take $$\phi(Q_i)^T$$ outside the summation to get:
+Now, we can take $\phi(Q_i)^T$ outside the summation to get:
 
 $$ V_i^{\prime} = \frac{\phi(Q_i)^T \left(\sum_{j=1}^{N} \phi(K_j) V_j\right)}{\phi(Q_i)^T \left(\sum_{j=1}^N \phi(K_j)\right)}. $$
 
-The expressions in the parentheses can be computed once and used for all $$Q_i$$'s --- this makes the attention computation linear. Now, the only question is: how do we find such a mapping $$\phi$$? Unfortunately, the $$\phi$$ for the `softmax` kernel is infinite-dimensioal, and so we cannot compute it exactly! The papers in this section use the above idea and try to approximate $$\phi$$ as best as possible.
+The expressions in the parentheses can be computed once and used for all $Q_i$'s --- this makes the attention computation linear. Now, the only question is: how do we find such a mapping $\phi$? Unfortunately, the $\phi$ for the `softmax` kernel is infinite-dimensioal, and so we cannot compute it exactly! The papers in this section use the above idea and try to approximate $\phi$ as best as possible.
 
 ### [Transformers are RNNs: Fast autoregressive transformers with linear attention](https://arxiv.org/abs/2006.16236)
 
-In this paper, the authors (somewhat arbitrarily) selected $$\phi(x) = \text{elu}(x) + 1$$, since this choice results in a positive similarity function. They claim from their experiments that this choice of mapping is on par with the full transformer.
+In this paper, the authors (somewhat arbitrarily) selected $\phi(x) = \text{elu}(x) + 1$, since this choice results in a positive similarity function. They claim from their experiments that this choice of mapping is on par with the full transformer.
 
 The other important part of the paper (which gives it the name "Transformers are RNNs") shows an equivalance between autoreressive linear transformers and RNNs. In general, for problems requiring autoregressive computation, a causal masking function is usually employed to compute attention. It can then be shown through an appropriate manipulation of the linear self-attention equation, that the model simply updates an internal states and passes it forward, which should make it equivalent to an RNN.
 
@@ -134,17 +134,17 @@ Performers use something called _fast attention via positive orthogonal random f
 
 $$ \phi(x) = \frac{h(x)}{\sqrt{m}} \left( f_1(\omega_1^T x), \ldots, f_1(\omega_m^T x), \ldots, f_l(\omega_1^T x), \ldots, f_l(\omega_m^T x) \right). $$
 
-Here, $$\omega$$'s are random vectors drawn from some distribution (usually a Normal distribution), $$h$$ is some function of $$x$$, and $$f_1, \ldots, f_l$$ are appropriately chosen deterministic functions. In the original fourier features work, these were often sinusoidal functions (hence the name fourier). $$m$$ is a hyperparameter which pertains to the accuracy of approximation, i.e., higher the $$m$$, better the approximation. It turns out that the softmax kernel can be approximated by choosing $$h(x) = \text{exp}\left(\frac{\lvert x \rvert^2}{2}\right), $$f_1 = sin$$, and $$f_2 = cos$$. The _fast attention_ and _random features_ in the method's name comes from this idea. So what about the positive orthoginality?
+Here, $\omega$'s are random vectors drawn from some distribution (usually a Normal distribution), $h$ is some function of $x$, and $f_1, \ldots, f_l$ are appropriately chosen deterministic functions. In the original fourier features work, these were often sinusoidal functions (hence the name fourier). $m$ is a hyperparameter which pertains to the accuracy of approximation, i.e., higher the $m$, better the approximation. It turns out that the softmax kernel can be approximated by choosing $h(x) = \text{exp}\left(\frac{\lvert x \rvert^2}{2}\right), $f_1 = sin$, and $f_2 = cos$. The _fast attention_ and _random features_ in the method's name comes from this idea. So what about the positive orthoginality?
 
-There is a caveat in the above approximation. While the method provides a good approximation on average, the variance is quite high, especially when the actual value is close to 0. This is because the softmax kernel is always positive, while the above approximation uses sinusoidal functions which may be positive or negative. Since the self-attention matrix is usually sparse in practice, using the above approximation results in a very high variance empirically. To solve this problem, the authors suggest a slightly different approximation, using $$h(x) = \frac{1}{\sqrt{2}}\text{exp}\left(-\frac{\lvert x \rvert^2}{2}\right)$$, $$f_1(x) = e^x$$, and $$f_2(x)  =e^{-x}$$, which results in a similarity function which is always positive. In their experiments, they even replace the `exp` function with `ReLU` and get better results. Finally, they show that if we choose the $$\omega$$'s to be exactly orthogal (using Gram-Schmidt orthogonalization or some other method), the variance can be reduced further. These changes result in the _positive orthogonal_ in the name.
+There is a caveat in the above approximation. While the method provides a good approximation on average, the variance is quite high, especially when the actual value is close to 0. This is because the softmax kernel is always positive, while the above approximation uses sinusoidal functions which may be positive or negative. Since the self-attention matrix is usually sparse in practice, using the above approximation results in a very high variance empirically. To solve this problem, the authors suggest a slightly different approximation, using $h(x) = \frac{1}{\sqrt{2}}\text{exp}\left(-\frac{\lvert x \rvert^2}{2}\right)$, $f_1(x) = e^x$, and $f_2(x)  =e^{-x}$, which results in a similarity function which is always positive. In their experiments, they even replace the `exp` function with `ReLU` and get better results. Finally, they show that if we choose the $\omega$'s to be exactly orthogal (using Gram-Schmidt orthogonalization or some other method), the variance can be reduced further. These changes result in the _positive orthogonal_ in the name.
 
-Using the above mapping function, $$Q$$ and $$K$$ can be mapped to $$Q^{\prime}$$ and $$K^{\prime}$$, and the matrix multiplications can be broken down into the following form, which results in linear complexity.
+Using the above mapping function, $Q$ and $K$ can be mapped to $Q^{\prime}$ and $K^{\prime}$, and the matrix multiplications can be broken down into the following form, which results in linear complexity.
 
 ![](/static/img/linear_transformers/performer-1.png)
 
 ### [Random feature attention](https://arxiv.org/abs/2103.02143)
 
-This paper was published concurrently with the Performer paper at ICLR 2021, and proposes the same idea of approximating the softmax kernel using random features. A similar extension of Rahimi and Recht's work is used to compute a mapping $$\phi$$ that approximates the similarity function computed by softmax:
+This paper was published concurrently with the Performer paper at ICLR 2021, and proposes the same idea of approximating the softmax kernel using random features. A similar extension of Rahimi and Recht's work is used to compute a mapping $\phi$ that approximates the similarity function computed by softmax:
 
 ![](/static/img/linear_transformers/rfa-1.png)
 
@@ -161,7 +161,7 @@ Here is a tabular summary of all the papers covered in this post:
 | [Longformer](https://arxiv.org/abs/2004.05150)  | Local-global attention | Window + Task-specific global attention | [Original](https://github.com/allenai/longformer), [HuggingFace](https://github.com/huggingface/transformers/tree/master/src/transformers/models/longformer) |
 | [Big Bird](https://arxiv.org/abs/2007.14062)  | Local-global attention | Window + global + block-wise random | [Original (Tensorflow)](https://github.com/google-research/bigbird), [HuggingFace](https://huggingface.co/google/bigbird-roberta-large) |
 | [Long-short transformer](https://arxiv.org/abs/2107.02192)  | Local-global attention | Window + dynamic JL projection matrix | [PyTorch](https://github.com/lucidrains/long-short-transformer) |
-| [Fast transformer](https://arxiv.org/abs/2006.16236)  | Softmax kernel | $$\phi(x) = \text{elu}(x) + 1$$ | [Original](https://github.com/idiap/fast-transformers), [Reimplementation](https://github.com/lucidrains/linear-attention-transformer) |
+| [Fast transformer](https://arxiv.org/abs/2006.16236)  | Softmax kernel | $\phi(x) = \text{elu}(x) + 1$ | [Original](https://github.com/idiap/fast-transformers), [Reimplementation](https://github.com/lucidrains/linear-attention-transformer) |
 | [Performer](https://arxiv.org/abs/2009.14794)  | Softmax kernel | FAVOR+ | [Original (TF)](https://github.com/google-research/google-research/tree/master/performer), [PyTorch](https://github.com/lucidrains/performer-pytorch), [HuggingFace](https://github.com/huggingface/transformers/pull/9325) |
 | [Random Features Attention](https://arxiv.org/abs/2103.02143)  | Softmax kernel | Random features + gating |                        |
 
