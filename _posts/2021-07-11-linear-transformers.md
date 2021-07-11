@@ -33,7 +33,7 @@ In the case of multi-head self-attention, the embedding dimensionality $d$ for $
 
 Linformer was perhaps the first paper which used the above observation to linearize self-attention. Suppose we represent $\text{softmax}\left( \frac{QK^T}{\sqrt{d}} \right)$ as $P$. The authors first made empirical investigations which suggest that $P$ is low-rank. (Note that $P$ is not guaranteed to be low-rank since it includes the `softmax` operation on the low-rank $QK^T$ matrix). In the following figure taken from the paper, we can see that most of the information in $P$ is concentrated in a few eigenvalues, as suggested by the steep cumulative sum curve. Furthermore, the deeper the layer, the lower is the empirical rank of the self-attention matrix, as seen in the figure on the right.
 
-![](/static/img/linear_transformers/linformer-1.png)
+![](/static/img/linear_transformers/linformer-1.PNG)
 
 The authors then used the [Johnson–Lindenstrauss lemma](https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma) to claim that there exists a low-rank matrix $\tilde{P}$ which can approximate $P$ with very low error. Intuitively, this works because when computing the self-attention matrix, we are only interested in the pairwise distances between points. The JL-lemma simply says that:
 
@@ -41,7 +41,7 @@ The authors then used the [Johnson–Lindenstrauss lemma](https://en.wikipedia.o
 
 To put theory into practice, the authors projected $K$ and $V$ using a $k\times n$ projection matrix to obtain $\tilde{K}$ and $\tilde{V}$. The product $QK^T$ is now of order $n\times k$, and the final output is still $n\times d$. The Linformer architecture is shown below:
 
-<center><img src="/static/img/linear_transformers/linformer-2.png" style="width:300px;" /></center>
+<center><img src="/static/img/linear_transformers/linformer-2.PNG" style="width:300px;" /></center>
 
 The only remaining question is how to choose an appropriate $k$. Theorem 2 in the paper suggests $k=\Theta(d\log d)$, and proves that for this choice of $k$, there exists projection matrices for which the low-rank approximation holds.
 
@@ -59,7 +59,7 @@ $$ \text{softmax}\left(QK^T\right) = \text{softmax}\left(Q\tilde{K}^T\right) \ti
 
 The $m$ rows are formed by using _segmental means_, i.e., dividing all rows into segments and taking the mean of each segment as a row. The entire computation pipeline of the Nystromformer is shown in the below figure taken from the paper:
 
-![](/static/img/linear_transformers/nystromformer-1.png)
+![](/static/img/linear_transformers/nystromformer-1.PNG)
 
 ## Methods based on local-global attention
 
@@ -69,7 +69,7 @@ The second class of methods "sparsifies" attention computation by restricting ho
 
 The idea behind longformer can most easily be understood from the following figure taken from the paper:
 
-![](/static/img/linear_transformers/longformer-1.png)
+![](/static/img/linear_transformers/longformer-1.PNG)
 
 Figure (a) shows the self-attention pattern in the standard transformer. If we restrict each item to only attend to a window of size $w$, this is the windowed attention pattern in (b). It is similar to convolutions, and hence suffers from lack of global context. The context can be extended without increasing computation by using a dilated attention, as in figure (c). The actual longformer uses task-specific global attention in addition to windowed or dilated attention in each layer, as shown in (d). The elements which get this "global" attention are chosen based on the task ---  for example, the `[CLS]` token is used for global attention in classification tasks, while for QA, all the question tokens receive global attention.
 
@@ -79,7 +79,7 @@ An important detail in the Longformer paper is the implementation of such an att
 
 The core idea of BigBird is very similar to the Longformer, and is shown in the figure below, taken from the paper:
 
-![](/static/img/linear_transformers/bigbird-1.png)
+![](/static/img/linear_transformers/bigbird-1.PNG)
 
 Similar to the longformer, BigBird uses a windowed attention and a selective global attention. Additionally, it also uses a "random attention", where each token in the sequence attends to a few randomly selected tokens (in addition to the global tokens and those in its window). More importantly, the authors show that this attention pattern has the same expressivity as standard full self-attention, both theoretically and empirically. In particular, they show 2 main things:
 
@@ -92,7 +92,7 @@ Overall, the random tokens is what makes BigBird different from Longformer, but 
 
 This paper combines a short-term attention and a long-range attention. Their short-term attention is simply the sliding window attention pattern that we have seen previously in Longformer and BigBird. The long-range attention is similar to the low-rank projection idea that was used in Linformer, but with a small change. In Linformer, the key and value matrices $K$ and $V$ were projected using a projection matrix $P \in \mathbb{R}^{n\times r}$ that was learned in training, and was the same for all sequences. In this paper, the matrix $P$ is "dynamic", and depends on the keys $K$ as $P = \text{softmax}(KW^P)$, where $W^P$ is a $d\times r$ matrix with learnable parameters. This means that a different projection matrix is used for each sequence, and the authors claim that this makes it more robust to insertions, deletions, paraphrasing, etc. The short-term and long-range attentions are then concatenated through a dual layernorm (to rescale them) to obtain the final attention matrix. This entire mechanism is shown in the following figure taken from the paper:
 
-![](/static/img/linear_transformers/ls-transformer-1.png)
+![](/static/img/linear_transformers/ls-transformer-1.PNG)
 
 ## Methods using softmax as a kernel
 
@@ -140,13 +140,13 @@ There is a caveat in the above approximation. While the method provides a good a
 
 Using the above mapping function, $Q$ and $K$ can be mapped to $Q^{\prime}$ and $K^{\prime}$, and the matrix multiplications can be broken down into the following form, which results in linear complexity.
 
-![](/static/img/linear_transformers/performer-1.png)
+![](/static/img/linear_transformers/performer-1.PNG)
 
 ### [Random feature attention](https://arxiv.org/abs/2103.02143)
 
 This paper was published concurrently with the Performer paper at ICLR 2021, and proposes the same idea of approximating the softmax kernel using random features. A similar extension of Rahimi and Recht's work is used to compute a mapping $\phi$ that approximates the similarity function computed by softmax:
 
-![](/static/img/linear_transformers/rfa-1.png)
+![](/static/img/linear_transformers/rfa-1.PNG)
 
 Additionally, this paper also proposes a method for learning with __recency bias__, since softmax does not explicitly model distance or locality (hence the importance of positional encodings in transformers). In the "transformers are RNNs" paper, we saw how autoregressive transformers can be shown to be equivalent to RNNs. Inspired from this equivalence, the authors in this paper further add a learned gating mechanism in the computation which biases the model to rely more on recent tokens.
 
