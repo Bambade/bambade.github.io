@@ -9,10 +9,22 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 **2021**
 
 - **Reformulating DOVER-Lap label mapping as a graph partitioning problem**  
-  Desh Raj, Sanjeev Khudanpur  
-  *Submitted to INTERSPEECH 2021*  
+  **Desh Raj**, Sanjeev Khudanpur  
+  *INTERSPEECH 2021*  
   [PDF](https://arxiv.org/pdf/2104.01954.pdf){: .btn}
   [Code](https://github.com/desh2608/dover-lap){: .btn}
+
+- **Auxiliary loss function for target speech extraction and recognition with weak supervision based on speaker characteristics**  
+  Katerina Zmolikova, Marc Delcroix, **Desh Raj**, Shinji Watanabe, Jan Černocký  
+  *INTERSPEECH 2021*  
+
+- **Target-speaker voice activity detection with improved i-vector estimation for unknown number of speaker**  
+  Mao-Kui He, **Desh Raj**, Zili Huang, Jun Du, Zhuo Chen, Shinji Watanabe  
+  *INTERSPEECH 2021*  
+
+- **Training hybrid models on noisy transliterated transcripts for code-switched speech recognition**  
+  Matthew Wiesner, Mousmita Sarma, Ashish Arora, **Desh Raj**, Dongji Gao, Ruizhe Huang, Supreet Preet, Moris Johnson, Zikra Iqbal, Nagendra Goel, Jan Trmal, Leibny Garcıa-Perera, Sanjeev Khudanpur  
+  *INTERSPEECH 2021*  
 
 - **The Hitachi-JHU DIHARD III system: Competitive end-to-end neural diarization and x-vector clustering systems combined by DOVER-Lap**  
   Shota Horiguchi, Nelson Yalta, Paola Garcia, Yuki Takashima, Yawen Xue, **Desh Raj**, Zili Huang, Yusuke Fujita, Shinji Watanabe, Sanjeev Khudanpur  
