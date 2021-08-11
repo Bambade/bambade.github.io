@@ -21,6 +21,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Target-speaker voice activity detection with improved i-vector estimation for unknown number of speaker**  
   Mao-Kui He, **Desh Raj**, Zili Huang, Jun Du, Zhuo Chen, Shinji Watanabe  
   *INTERSPEECH 2021*  
+  [PDF](https://arxiv.org/pdf/2108.03342.pdf)
 
 - **Training hybrid models on noisy transliterated transcripts for code-switched speech recognition**  
   Matthew Wiesner, Mousmita Sarma, Ashish Arora, **Desh Raj**, Dongji Gao, Ruizhe Huang, Supreet Preet, Moris Johnson, Zikra Iqbal, Nagendra Goel, Jan Trmal, Leibny Garcıa-Perera, Sanjeev Khudanpur  
