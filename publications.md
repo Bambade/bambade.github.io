@@ -15,6 +15,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   [Code](https://github.com/desh2608/dover-lap){: .btn}
   [Report](/static/report/doverlap.pdf){: .btn}
   [Slides](/static/ppt/interspeech21_doverlap.pdf){: .btn}
+  [Video](/static/video/interspeech21_doverlap_full.mp4){: .btn}
 
 - **Auxiliary loss function for target speech extraction and recognition with weak supervision based on speaker characteristics**  
   Katerina Zmolikova, Marc Delcroix, **Desh Raj**, Shinji Watanabe, Jan Černocký  
