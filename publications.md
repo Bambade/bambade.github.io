@@ -11,7 +11,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Continuous streaming multi-talker ASR with dual-path transducers**  
   **Desh Raj**, Liang Lu, Zhuo Chen, Yashesh Gaur, Jinyu Li  
   *Submitted to ICASSP 2022*  
-  [Paper](){: .btn}
+  [Paper](https://arxiv.org/abs/2109.08555){: .btn}
   [Slides](/static/ppt/intern_multi_surt.pdf){: .btn}
 
 - **Reformulating DOVER-Lap label mapping as a graph partitioning problem**  
