@@ -14,6 +14,12 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   [Paper](https://arxiv.org/abs/2109.08555){: .btn}
   [Slides](/static/ppt/intern_multi_surt.pdf){: .btn}
 
+- **Injecting text and cross-lingual supervision in few-shot learning from self-supervised models**  
+  Matthew Wiesner, **Desh Raj**, Sanjeev Khudanpur  
+  *Submitted to ICASSP 2022*  
+  [Paper](https://arxiv.org/abs/2110.04863){: .btn}
+  [Code](https://github.com/m-wiesner/nnet_pytorch/tree/conda_install/babel){: .btn}
+
 - **Reformulating DOVER-Lap label mapping as a graph partitioning problem**  
   **Desh Raj**, Sanjeev Khudanpur  
   *INTERSPEECH 2021*  
