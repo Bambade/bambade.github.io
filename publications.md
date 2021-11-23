@@ -6,7 +6,7 @@ title: Publications
 You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
-**2021**
+**2022**
 
 - **Continuous streaming multi-talker ASR with dual-path transducers**  
   **Desh Raj**, Liang Lu, Zhuo Chen, Yashesh Gaur, Jinyu Li  
@@ -19,6 +19,13 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   *Submitted to ICASSP 2022*  
   [Paper](https://arxiv.org/abs/2110.04863){: .btn}
   [Code](https://github.com/m-wiesner/nnet_pytorch/tree/conda_install/babel){: .btn}
+
+**2021**
+
+- **Joint speaker diarization and speech recognition based on region proposal networks**  
+  Zili Huang, Marc Delcroix, Leibny Paola Garcia, Shinji Watanabe, **Desh Raj**, Sanjeev Khudanpur  
+  *Computer, Speech, and Language, Vol. 72*  
+  [Paper](https://doi.org/10.1016/j.csl.2021.101316){: .btn}
 
 - **Reformulating DOVER-Lap label mapping as a graph partitioning problem**  
   **Desh Raj**, Sanjeev Khudanpur  
