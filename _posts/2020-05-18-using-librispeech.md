@@ -4,6 +4,8 @@ title: How to use the pre-trained Librispeech model in Kaldi
 tags: ["kaldi","speech recognition"]
 mathjax: true
 ---
+_[Update on Feb 25, 2022]_ The pre-trained model did not have a `frame_subsampling_factor` file, which is required for correct decoding. This has now been added and WER results updated for WSJ. The high WERs earlier were due to train-test mismatch in the subsampling factor.
+
 This is a tutorial on how to use the [pre-trained Librispeech model](http://kaldi-asr.org/models/m13) available from kaldi-asr.org to decode your own data. For illustration, I will use the model to perform decoding on the [WSJ data](https://catalog.ldc.upenn.edu/LDC94S13A). 
 
 ## Setting up Kaldi
@@ -191,9 +193,9 @@ foo@bar:~kaldi/egs/wsj/s5$ for decode_set in test_dev93 test_eval92; do
   steps/score_kaldi.sh --cmd "run.pl" data/${decode_set}_hires $graph_dir $dir/decode_${decode_set}_tgsmall
 done
 foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_tgsmall/scoring_kaldi/best_wer
-%WER 18.47 [ 1539 / 8334, 278 ins, 167 del, 1094 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_tgsmall/wer_17_1.0
+%WER 14.22 [ 1171 / 8234, 183 ins, 93 del, 895 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_tgsmall/wer_11_0.5
 foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_tgsmall/scoring_kaldi/best_wer
-%WER 14.14 [ 806 / 5700, 147 ins, 75 del, 584 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_tgsmall/wer_17_1.0
+%WER 11.73 [ 662 / 5643, 94 ins, 29 del, 539 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_tgsmall/wer_10_1.0
 ```
 
 As a comparison, a model trained on the WSJ training data, and using a matched LM gives ~6.9% WER on both dev and eval at this stage. 
@@ -219,15 +221,15 @@ done
 The scoring is included in the `lmrescore_pruned.sh` script.
 
 ```console
-foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_rescore/scoring_kaldi/best_wer
-%WER 11.96 [ 675 / 5643, 149 ins, 14 del, 512 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_rescore/wer_17_1.0
 foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_rescore/scoring_kaldi/best_wer
-%WER 15.81 [ 1302 / 8234, 280 ins, 60 del, 962 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_rescore/wer_17_1.0
+%WER 11.79 [ 971 / 8234, 159 ins, 80 del, 732 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_dev93_rescore/wer_11_1.0
+foo@bar:~kaldi/egs/wsj/s5$ cat exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_rescore/scoring_kaldi/best_wer
+%WER 9.75 [ 550 / 5643, 81 ins, 25 del, 444 sub ] exp/chain_cleaned/tdnn_1d_sp/decode_test_eval92_rescore/wer_13_1.0
 ```
 
 Finally, the obtained WERs are shown in the table below:
 
 | System  | test_dev93 | test_eval92 |
 |---------|------------|-------------|
-| tgsmall | 18.47      | 14.14       |
-| rnnlm   | 15.81      | 11.96       |
+| tgsmall | 14.22      | 11.73       |
+| rnnlm   | 11.79      | 9.75       |
