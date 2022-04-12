@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GBO notes: Spectral clustering"
-tags: ["gbo", "i-vectors"]
+tags: ["gbo", "spectral clustering"]
 mathjax: true
 ---
 
