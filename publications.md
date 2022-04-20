@@ -18,6 +18,8 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   *IEEE ICASSP 2022*  
   [Paper](https://arxiv.org/abs/2109.08555){: .btn}
   [Slides](/static/ppt/intern_multi_surt.pdf){: .btn}
+  [Poster](/static/poster/icassp-22-surt-poster.pdf){: .btn}
+  [Video](/static/video/icassp22_multi_surt.mp4){: .btn}
 
 - **Injecting text and cross-lingual supervision in few-shot learning from self-supervised models**  
   Matthew Wiesner, **Desh Raj**, Sanjeev Khudanpur  
