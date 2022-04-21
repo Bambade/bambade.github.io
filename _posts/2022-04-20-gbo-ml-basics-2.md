@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GBO notes: Machine learning basics (Part 2)"
-tags: ["gbo", "wfst"]
+tags: ["gbo", "ml-basics"]
 mathjax: true
 ---
 

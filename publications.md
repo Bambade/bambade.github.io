@@ -26,6 +26,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   *IEEE ICASSP 2022*  
   [Paper](https://arxiv.org/abs/2110.04863){: .btn}
   [Code](https://github.com/m-wiesner/nnet_pytorch/tree/conda_install/babel){: .btn}
+  [Poster](/static/poster/icassp-22-lfmmi-poster.pdf){: .btn}
 
 **2021**
 
