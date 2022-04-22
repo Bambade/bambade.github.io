@@ -27,7 +27,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   [Paper](https://arxiv.org/abs/2110.04863){: .btn}
   [Code](https://github.com/m-wiesner/nnet_pytorch/tree/conda_install/babel){: .btn}
   [Poster](/static/poster/icassp-22-lfmmi-poster.pdf){: .btn}
-  [Video](/static/video/icassp22_wav2vec_lfmmi.mp4){: .btn}
+  [Video (Matthew)](/static/video/icassp22_wav2vec_lfmmi.mp4){: .btn}
 
 **2021**
 
