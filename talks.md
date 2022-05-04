@@ -5,6 +5,10 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **GBO presentation**  
+  [Slides](/static/ppt/gbo_presentation.pdf){: .btn}  
+  *Malone 228* (May 04, 2022)
+
 - **Overlap-aware Speaker Diarization: Methods and Ensembles**  
   *ISCA SIG-ML Seminar* (May 05, 2021): [Video](https://www.youtube.com/watch?v=SHWNqU9g_hU){: .btn} [Slides](/static/ppt/isca_sigml_desh.pdf){: .btn}  
   *CLSP Seminar* (January 29, 2021): [Slides](/static/ppt/clsp_seminar_talk.pdf){: .btn}  
