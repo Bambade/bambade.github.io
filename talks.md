@@ -5,7 +5,7 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
-- **GBO presentation**  
+- **GBO presentation**
   [Slides](/static/ppt/gbo_presentation.pdf){: .btn}  
   *Malone 228* (May 04, 2022)
 
