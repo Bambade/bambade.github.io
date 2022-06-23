@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student under the supervision of [Justin carpentier](https://jcarpent.github.io/), [Adrien Taylor](https://adrientaylor.github.io/) and [Jean Ponce](https://www.di.ens.fr/~ponce/). 
+I am a PhD student under the supervision of [Justin Carpentier](https://jcarpent.github.io/), [Adrien Taylor](https://adrientaylor.github.io/) and [Jean Ponce](https://www.di.ens.fr/~ponce/). 
 I work in the [Willow](https://www.inria.fr/en/willow) and [Sierra](https://www.di.ens.fr/sierra/) teams at [Inria](https://www.inria.fr/fr/centre-inria-de-paris) in Paris. 
 
 I graduated from the [École Polytechnique](https://www.polytechnique.edu/) and the [University of Cambridge](https://www.maths.cam.ac.uk/postgrad/part-iii/prospective.html), receiving a MSc degree in applied mathematics.
