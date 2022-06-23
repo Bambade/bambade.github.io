@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Louis Montaut"
+title                    : "Antoine Bambade"
 title_separator          : "-"
-name                     : &name "Louis Montaut"
+name                     : &name "Antoine Bambade"
 description              : &description "personal description"
-url                      : https://lmontaut.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://bambade.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "lmontaut/lmontaut.github.io"
+repository               : "Bambade/bambade.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Louis Montaut"
+  name             : "Antoine Bambade"
   avatar           : "profile.jpg"
-  bio              : "PhD student in robotics - Willow team at Inria, Paris & Impact team at CIIRC, Prague"
+  bio              : "PhD student in robotics - Willow and Sierra teams at Inria, ENS PSL, ENPC"
   location         : "Inria, Paris"
   employer         :
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=iN41GLwAAAAJ&hl=en&oi=ao"
-  email            : "louis.montaut@inria.fr, louis.montaut@cvut.cz"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?hl=fr&user=JfnD2T8AAAAJ"
+  email            : "antoine.bambade@inria.fr"
+  researchgate     :  "https://www.researchgate.net/profile/Antoine-Bambade"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "lmontaut"
+  github           : "Bambade"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/antoine-bambade-5b0450135/"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :

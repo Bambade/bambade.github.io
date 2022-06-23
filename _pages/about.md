@@ -8,14 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student under the supervision of [Justin carpentier](https://jcarpent.github.io/), [Vladimir Petrik](https://petrikvladimir.github.io/) and [Josef Sivic](https://www.di.ens.fr/~josef/). 
-I work in the [Willow](https://www.inria.fr/en/willow) team at [Inria](https://www.inria.fr/fr/centre-inria-de-paris) in Paris as well as in the [Impact](http://impact.ciirc.cvut.cz/) team at [CIIRC](https://www.ciirc.cvut.cz/) in Prague. 
+I am a PhD student under the supervision of [Justin carpentier](https://jcarpent.github.io/), [Adrien Taylor](https://adrientaylor.github.io/) and [Jean Ponce](https://www.di.ens.fr/~ponce/). 
+I work in the [Willow](https://www.inria.fr/en/willow) and [Sierra](https://www.di.ens.fr/sierra/) teams at [Inria](https://www.inria.fr/fr/centre-inria-de-paris) in Paris. 
 
-I graduated from [Ecole Nationale des Ponts et Chaussées](https://ecoledesponts.fr/), receiving a MSc degree in applied mathematics.
+I graduated from the [École Polytechnique](https://www.polytechnique.edu/) and the [University of Cambridge](https://www.maths.cam.ac.uk/postgrad/part-iii/prospective.html), receiving a MSc degree in applied mathematics.
 
 My research interests are in Robotics and Optimization.
 
 Publications
 ======
-- June 2022: [Collision Detection Accelerated: An Optimization Perspective](https://arxiv.org/abs/2205.09663). Louis Montaut, Quentin Le Lidec, Vladimir Petrik, Josef Sivic, Justin Carpentier. Published at RSS 2022. [Paper](https://arxiv.org/abs/2205.09663), [Code](https://github.com/lmontaut/collision-detection-benchmark), [Project page]()
-
+- June 2022: [PROX-QP: Yet another Quadratic Programming Solver for Robotics and beyond](https://hal.inria.fr/hal-03683733/document). Antoine Bambade, Sarah El Kazdadi, Adrien Taylor, Justin Carpentier. Published at RSS 2022. [Paper](https://hal.inria.fr/hal-03683733/document), [Code](https://github.com/Simple-Robotics/proxsuite), [Project page]()
+- May 2022: [ProxNLP: a primal-dual augmented Lagrangian solver for nonlinear programming in Robotics and beyond](https://hal.archives-ouvertes.fr/hal-03680510/document). Wilson Jallet, Antoine Bambade, Nicolas Mansard, Justin Carpentier. 6th Legged Robots Workshop - RSS 2022. [Paper](https://hal.archives-ouvertes.fr/hal-03680510/document), [Code](), [Project page]()
+- April 2022: [Constrained Differential Dynamic Programming: A primal-dual augmented Lagrangian approach](https://hal.archives-ouvertes.fr/hal-03597630/document). Wilson Jallet, Antoine Bambade, Nicolas Mansard, Justin Carpentier. In proceedings. [Paper](https://hal.archives-ouvertes.fr/hal-03597630/document), [Code](), [Project page]()
