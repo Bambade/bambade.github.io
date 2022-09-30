@@ -8,9 +8,9 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 **2022**
 
-- **Leveraging Speech Separation for Conversational Telephone Speaker Diarization**  
-  Giovanni Morrone, Samuele Cornell, **Desh Raj**, Enrico Zovato, Alessio Brutti, Stefano Squartini  
-  *Submitted to INTERSPEECH 2022*  
+- **Low-Latency Speech Separation Guided Diarization for Telephone Conversations**  
+  Giovanni Morrone, Samuele Cornell, **Desh Raj**, Luca Serafini, Enrico Zovato, Alessio Brutti, Stefano Squartini  
+  *IEEE Spoken Language Technology (SLT) Workshop 2022*  
   [Paper](https://arxiv.org/abs/2204.02306){: .btn} 
 
 - **Continuous streaming multi-talker ASR with dual-path transducers**  
