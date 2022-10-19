@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **Training RNN-T models without memory bottleneck**
+  [Slides](/static/ppt/transducer_memory_reading_group.pdf){: .btn}  
+  *Speech Technologies Reading Group*  
+  October 14, 2022
+
 - **GBO presentation**
   [Slides](/static/ppt/gbo_presentation.pdf){: .btn}  
   *Malone 228* (May 04, 2022)
