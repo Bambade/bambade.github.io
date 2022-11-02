@@ -9,9 +9,14 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 **2022**
 
 - **Anchored Speech Recognition using Neural Transducers**  
-  **Desh Raj**, Junteng Jia, Jay Mahadeokar, Chunyang Wu, Niko Moritz, Xiaohui Zhang, Ozlem Kalinli 
+  **Desh Raj**, Junteng Jia, Jay Mahadeokar, Chunyang Wu, Niko Moritz, Xiaohui Zhang, Ozlem Kalinli  
   *Submitted to IEEE ICASSP 2023*  
   [Paper](https://arxiv.org/abs/2210.11588){: .btn} 
+
+- **Adapting self-supervised models to multi-talker speech recognition using speaker embeddings**  
+  Zili Huang, **Desh Raj**, Paola Garcia, Sanjeev Khudanpur  
+  *Submitted to IEEE ICASSP 2023*  
+  [Paper](https://arxiv.org/abs/2211.00482){: .btn} 
 
 - **Low-Latency Speech Separation Guided Diarization for Telephone Conversations**  
   Giovanni Morrone, Samuele Cornell, **Desh Raj**, Luca Serafini, Enrico Zovato, Alessio Brutti, Stefano Squartini  
