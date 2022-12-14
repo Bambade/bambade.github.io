@@ -8,6 +8,12 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 **2022**
 
+- **GPU-accelerated Guided Source Separation for Meeting Transcription**  
+  **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
+  *ArXiv preprint*  
+  [Paper](https://arxiv.org/abs/2212.05271){: .btn}
+  [Code](https://github.com/desh2608/gss){: .btn} 
+
 - **Anchored Speech Recognition using Neural Transducers**  
   **Desh Raj**, Junteng Jia, Jay Mahadeokar, Chunyang Wu, Niko Moritz, Xiaohui Zhang, Ozlem Kalinli  
   *Submitted to IEEE ICASSP 2023*  
