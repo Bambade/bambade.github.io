@@ -6,13 +6,7 @@ title: Publications
 You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
-**2022**
-
-- **GPU-accelerated Guided Source Separation for Meeting Transcription**  
-  **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
-  *ArXiv preprint*  
-  [Paper](https://arxiv.org/abs/2212.05271){: .btn}
-  [Code](https://github.com/desh2608/gss){: .btn} 
+**2023**
 
 - **Anchored Speech Recognition using Neural Transducers**  
   **Desh Raj**, Junteng Jia, Jay Mahadeokar, Chunyang Wu, Niko Moritz, Xiaohui Zhang, Ozlem Kalinli  
@@ -23,6 +17,14 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   Zili Huang, **Desh Raj**, Paola Garcia, Sanjeev Khudanpur  
   *IEEE ICASSP 2023*  
   [Paper](https://arxiv.org/abs/2211.00482){: .btn} 
+
+**2022**
+
+- **GPU-accelerated Guided Source Separation for Meeting Transcription**  
+  **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
+  *ArXiv preprint*  
+  [Paper](https://arxiv.org/abs/2212.05271){: .btn}
+  [Code](https://github.com/desh2608/gss){: .btn} 
 
 - **Low-Latency Speech Separation Guided Diarization for Telephone Conversations**  
   Giovanni Morrone, Samuele Cornell, **Desh Raj**, Luca Serafini, Enrico Zovato, Alessio Brutti, Stefano Squartini  
