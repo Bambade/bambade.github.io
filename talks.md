@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **Target Speaker Methods for Speech Recognition**
+  [Slides](/static/ppt/clsp_seminar_tsasr.pdf){: .btn}  
+  *CLSP Seminar*  
+  March 27, 2023
+
 - **Training RNN-T models without memory bottleneck**
   [Slides](/static/ppt/transducer_memory_reading_group.pdf){: .btn}  
   *Speech Technologies Reading Group*  
