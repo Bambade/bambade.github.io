@@ -16,7 +16,8 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Adapting self-supervised models to multi-talker speech recognition using speaker embeddings**  
   Zili Huang, **Desh Raj**, Paola Garcia, Sanjeev Khudanpur  
   *IEEE ICASSP 2023*  
-  [Paper](https://arxiv.org/abs/2211.00482){: .btn} 
+  [Paper](https://arxiv.org/abs/2211.00482){: .btn}
+  [Code](https://github.com/HuangZiliAndy/SSL_for_multitalker){: .btn} 
 
 **2022**
 
