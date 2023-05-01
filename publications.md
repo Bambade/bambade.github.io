@@ -11,7 +11,9 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Anchored Speech Recognition using Neural Transducers**  
   **Desh Raj**, Junteng Jia, Jay Mahadeokar, Chunyang Wu, Niko Moritz, Xiaohui Zhang, Ozlem Kalinli  
   *IEEE ICASSP 2023*  
-  [Paper](https://arxiv.org/abs/2210.11588){: .btn} 
+  [Paper](https://arxiv.org/abs/2210.11588){: .btn}
+  [Slides](/static/ppt/icassp23_tsasr.pdf){: .btn}
+  [Video](https://youtu.be/L2WnjQC8Pe0){: .btn} 
 
 - **Adapting self-supervised models to multi-talker speech recognition using speaker embeddings**  
   Zili Huang, **Desh Raj**, Paola Garcia, Sanjeev Khudanpur  
