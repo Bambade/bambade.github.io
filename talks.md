@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **FLASH Attention**
+  [Slides](/static/ppt/flash_attention.pdf){: .btn}  
+  *Speech Technologies Reading Group*  
+  April 14, 2023
+
 - **Target Speaker Methods for Speech Recognition**
   [Slides](/static/ppt/clsp_seminar_tsasr.pdf){: .btn}  
   *CLSP Seminar*  

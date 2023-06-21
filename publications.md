@@ -8,6 +8,12 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 **2023**
 
+- **SURT 2.0: Advances in Transducer-based Multi-talker Speech Recognition**  
+  **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
+  *Submitted to TASLP*  
+  [Paper](https://arxiv.org/abs/2306.10559){: .btn}
+  [Webpage](https://sites.google.com/view/surt2){: .btn} 
+
 - **GPU-accelerated Guided Source Separation for Meeting Transcription**  
   **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
   *InterSpeech 2023*  
