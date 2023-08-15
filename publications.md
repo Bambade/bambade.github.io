@@ -19,6 +19,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   *InterSpeech 2023*  
   [Paper](https://www.isca-speech.org/archive/interspeech_2023/raj23_interspeech.html){: .btn}
   [ArXiv](https://arxiv.org/abs/2212.05271){: .btn}
+  [Poster](/static/poster/interspeech-23-gss.pdf){: .btn}
   [Code](https://github.com/desh2608/gss){: .btn} 
 
 - **Anchored Speech Recognition using Neural Transducers**  
