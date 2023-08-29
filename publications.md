@@ -14,6 +14,12 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   [Paper](https://arxiv.org/abs/2306.10559){: .btn}
   [Webpage](https://sites.google.com/view/surt2){: .btn} 
 
+- **The CHiME-7 DASR Challenge: Distant Meeting Transcription with Multiple Devices in Diverse Scenarios**  
+  Samuele Cornell, Matthew Wiesner, Shinji Watanabe, **Desh Raj**, Xuankai Chang, Paola Garcia, Matthew Maciejewski, Yoshiki Masuyama, Zhong-Qiu Wang, Stefano Squartini, Sanjeev Khudanpur  
+  *CHiME Workshop at InterSpeech 2023*  
+  [Paper](https://arxiv.org/abs/2306.13734){: .btn}
+  [Website](https://www.chimechallenge.org/current/task1/index){: .btn} 
+
 - **GPU-accelerated Guided Source Separation for Meeting Transcription**  
   **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
   *InterSpeech 2023*  
