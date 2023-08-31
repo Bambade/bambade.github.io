@@ -31,7 +31,7 @@ limiting assumptions:
 1. The output sequence must be shorter than the input sequence.
 2. Output units at each time step are conditionally independent given the input.
 
-AEDs were introduced in 2014 by Ilya Sutskever et al. in [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215). They are more flexible than CTC in the sense that they
+AEDs were introduced in 2015 by Jan Chrowski et al. in [Attention-Based Models for Speech Recognition](https://arxiv.org/abs/1506.07503). They are more flexible than CTC in the sense that they
 forego the 2 assumptions, but are not streaming models, since the entire input needs to be
 encoded first to start decoding. They also do not provide a time alignment between the input and output sequence, which is often useful for ASR.
 
