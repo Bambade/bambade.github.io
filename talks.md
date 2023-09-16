@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **Listening to Multi-talker Conversations: Modular and End-to-end Perspectives**
+  [Slides](/static/ppt/nvidia_talk.pdf){: .btn}  
+  *Invited talk at NVIDIA Speech group*  
+  August 18, 2023
+
 - **FLASH Attention**
   [Slides](/static/ppt/flash_attention.pdf){: .btn}  
   *Speech Technologies Reading Group*  
