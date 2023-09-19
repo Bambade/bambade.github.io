@@ -10,7 +10,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 - **SURT 2.0: Advances in Transducer-based Multi-talker Speech Recognition**  
   **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
-  *Submitted to TASLP*  
+  *IEEE/ACM Transactions on Audio, Speech, and Language Processing*  
   [Paper](https://arxiv.org/abs/2306.10559){: .btn}
   [Webpage](https://sites.google.com/view/surt2){: .btn} 
 
