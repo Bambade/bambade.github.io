@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **VoiceBox: Text-guided multi-lingual speech generation at scale**
+  [Slides](/static/ppt/voicebox.pdf){: .btn}  
+  *Speech Technologies Reading Group*  
+  September 22, 2023
+
 - **Listening to Multi-talker Conversations: Modular and End-to-end Perspectives**
   [Slides](/static/ppt/nvidia_talk.pdf){: .btn}  
   *Invited talk at NVIDIA Speech group*  
