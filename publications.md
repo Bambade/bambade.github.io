@@ -8,19 +8,31 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 **2023**
 
-- **SURT 2.0: Advances in Transducer-based Multi-talker Speech Recognition**  
+- **Updated corpora and benchmarks for long-form speech recognition**  
+  Jennifer Drexler Fox, **Desh Raj**, Natalie Delworth, Quinn McNamara, Corey Miller, Migüel Jetté 
+  *Submitted to IEEE ICASSP 2024*  
+  [Paper](https://arxiv.org/abs/2309.15013){: .btn}
+  [Code](https://github.com/revdotcom/speech-datasets){: .btn} 
+
+- **Training dynamic models using early exits for automatic speech recognition on resource-constrained devices**  
+  George August Wright, Umberto Cappellazzo, Salah Zaiem, **Desh Raj**, Lucas Ondel Yang, Daniele Falavigna, Alessio Brutti 
+  *IEEE ICASSP 2023*  
+  [Paper](https://aps.arxiv.org/abs/2309.09546){: .btn} 
+
+- **SURT 2.0: Advances in transducer-based multi-talker speech recognition**  
   **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
-  *IEEE/ACM Transactions on Audio, Speech, and Language Processing*  
-  [Paper](https://arxiv.org/abs/2306.10559){: .btn}
+  *IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)*  
+  [Paper](https://ieeexplore.ieee.org/document/10262308){: .btn}
+  [ArXiv](https://arxiv.org/abs/2306.10559){: .btn}
   [Webpage](https://sites.google.com/view/surt2){: .btn} 
 
-- **The CHiME-7 DASR Challenge: Distant Meeting Transcription with Multiple Devices in Diverse Scenarios**  
+- **The CHiME-7 DASR challenge: Distant meeting transcription with multiple devices in diverse scenarios**  
   Samuele Cornell, Matthew Wiesner, Shinji Watanabe, **Desh Raj**, Xuankai Chang, Paola Garcia, Matthew Maciejewski, Yoshiki Masuyama, Zhong-Qiu Wang, Stefano Squartini, Sanjeev Khudanpur  
   *CHiME Workshop at InterSpeech 2023*  
   [Paper](https://arxiv.org/abs/2306.13734){: .btn}
   [Website](https://www.chimechallenge.org/current/task1/index){: .btn} 
 
-- **GPU-accelerated Guided Source Separation for Meeting Transcription**  
+- **GPU-accelerated guided source separation for meeting transcription**  
   **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
   *InterSpeech 2023*  
   [Paper](https://www.isca-speech.org/archive/interspeech_2023/raj23_interspeech.html){: .btn}
@@ -28,7 +40,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   [Poster](/static/poster/interspeech-23-gss.pdf){: .btn}
   [Code](https://github.com/desh2608/gss){: .btn} 
 
-- **Anchored Speech Recognition using Neural Transducers**  
+- **Anchored speech recognition using neural transducers**  
   **Desh Raj**, Junteng Jia, Jay Mahadeokar, Chunyang Wu, Niko Moritz, Xiaohui Zhang, Ozlem Kalinli  
   *IEEE ICASSP 2023*  
   [Paper](https://arxiv.org/abs/2210.11588){: .btn}
@@ -43,7 +55,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 **2022**
 
-- **Low-Latency Speech Separation Guided Diarization for Telephone Conversations**  
+- **Low-Latency speech separation guided diarization for telephone conversations**  
   Giovanni Morrone, Samuele Cornell, **Desh Raj**, Luca Serafini, Enrico Zovato, Alessio Brutti, Stefano Squartini  
   *IEEE Spoken Language Technology (SLT) Workshop 2022*  
   [Paper](https://arxiv.org/abs/2204.02306){: .btn} 
