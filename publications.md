@@ -9,18 +9,18 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 **2023**
 
 - **Updated corpora and benchmarks for long-form speech recognition**  
-  Jennifer Drexler Fox, **Desh Raj**, Natalie Delworth, Quinn McNamara, Corey Miller, Migüel Jetté 
+  Jennifer Drexler Fox, **Desh Raj**, Natalie Delworth, Quinn McNamara, Corey Miller, Migüel Jetté  
   *Submitted to IEEE ICASSP 2024*  
   [Paper](https://arxiv.org/abs/2309.15013){: .btn}
   [Code](https://github.com/revdotcom/speech-datasets){: .btn} 
 
 - **Training dynamic models using early exits for automatic speech recognition on resource-constrained devices**  
-  George August Wright, Umberto Cappellazzo, Salah Zaiem, **Desh Raj**, Lucas Ondel Yang, Daniele Falavigna, Alessio Brutti 
+  George August Wright, Umberto Cappellazzo, Salah Zaiem, **Desh Raj**, Lucas Ondel Yang, Daniele Falavigna, Alessio Brutti  
   *IEEE ICASSP 2023*  
   [Paper](https://aps.arxiv.org/abs/2309.09546){: .btn} 
 
 - **Learning from flawed data: Weakly supervised automatic speech recognition**  
-  Dongji Gao, Hainan Xu, **Desh Raj**, Leibny Paola Garcia Perera, Daniel Povey, Sanjeev Khudanpur
+  Dongji Gao, Hainan Xu, **Desh Raj**, Leibny Paola Garcia Perera, Daniel Povey, Sanjeev Khudanpur  
   *IEEE ASRU 2023*  
   [Paper](https://arxiv.org/abs/2309.15796){: .btn}
   [Code](https://github.com/k2-fsa/icefall/pull/1255){: .btn} 
