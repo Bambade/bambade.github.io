@@ -19,6 +19,12 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   *IEEE ICASSP 2023*  
   [Paper](https://aps.arxiv.org/abs/2309.09546){: .btn} 
 
+- **Learning from flawed data: Weakly supervised automatic speech recognition**  
+  Dongji Gao, Hainan Xu, **Desh Raj**, Leibny Paola Garcia Perera, Daniel Povey, Sanjeev Khudanpur
+  *IEEE ASRU 2023*  
+  [Paper](https://arxiv.org/abs/2309.15796){: .btn}
+  [Code](https://github.com/k2-fsa/icefall/pull/1255){: .btn} 
+
 - **SURT 2.0: Advances in transducer-based multi-talker speech recognition**  
   **Desh Raj**, Daniel Povey, Sanjeev Khudanpur  
   *IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)*  
