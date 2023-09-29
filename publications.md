@@ -16,7 +16,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 - **Training dynamic models using early exits for automatic speech recognition on resource-constrained devices**  
   George August Wright, Umberto Cappellazzo, Salah Zaiem, **Desh Raj**, Lucas Ondel Yang, Daniele Falavigna, Alessio Brutti  
-  *IEEE ICASSP 2023*  
+  *Submitted to IEEE ICASSP 2024*  
   [Paper](https://aps.arxiv.org/abs/2309.09546){: .btn} 
 
 - **Learning from flawed data: Weakly supervised automatic speech recognition**  
