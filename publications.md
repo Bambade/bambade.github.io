@@ -36,6 +36,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
   Samuele Cornell, Matthew Wiesner, Shinji Watanabe, **Desh Raj**, Xuankai Chang, Paola Garcia, Matthew Maciejewski, Yoshiki Masuyama, Zhong-Qiu Wang, Stefano Squartini, Sanjeev Khudanpur  
   *CHiME Workshop at InterSpeech 2023*  
   [Paper](https://arxiv.org/abs/2306.13734){: .btn}
+  [Poster](/static/poster/taslp-23-surt.pdf){: .btn}
   [Website](https://www.chimechallenge.org/current/task1/index){: .btn} 
 
 - **GPU-accelerated guided source separation for meeting transcription**  
