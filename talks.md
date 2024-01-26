@@ -5,6 +5,11 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work by other authors in reading groups):
 
+- **Listening to Multi-talker Conversations: Modular and End-to-end Perspectives**
+  [Slides](/static/ppt/thesis_defense.pdf){: .btn}  
+  *PhD Thesis Defense*  
+  January 26, 2024
+
 - **VoiceBox: Text-guided multi-lingual speech generation at scale**
   [Slides](/static/ppt/voicebox.pdf){: .btn}  
   *Speech Technologies Reading Group*  
