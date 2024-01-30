@@ -6,18 +6,25 @@ title: Publications
 You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
-**2023**
+**2024**
+
+- **On speaker attribution with SURT**  
+  **Desh Raj**, Matthew Wiesner, Matthew Maciejewski, Paola Garcia, Daniel Povey, Sanjeev Khudanpur  
+  *Submitted to Speaker Odyssey 2024*  
+  [Paper](https://arxiv.org/abs/2401.15676){: .btn} 
 
 - **Updated corpora and benchmarks for long-form speech recognition**  
   Jennifer Drexler Fox, **Desh Raj**, Natalie Delworth, Quinn McNamara, Corey Miller, Migüel Jetté  
-  *Submitted to IEEE ICASSP 2024*  
+  *IEEE ICASSP 2024*  
   [Paper](https://arxiv.org/abs/2309.15013){: .btn}
   [Code](https://github.com/revdotcom/speech-datasets){: .btn} 
 
-- **Training dynamic models using early exits for automatic speech recognition on resource-constrained devices**  
+- **Training Early-Exit Architectures for Automatic Speech Recognition: Fine-Tuning Pre-Trained Models or Training from Scratch**  
   George August Wright, Umberto Cappellazzo, Salah Zaiem, **Desh Raj**, Lucas Ondel Yang, Daniele Falavigna, Alessio Brutti  
-  *Submitted to IEEE ICASSP 2024*  
+  *IEEE ICASSP 2024 Workshop on Self-supervision in Audio, Speech, and Beyond (SASB)*  
   [Paper](https://aps.arxiv.org/abs/2309.09546){: .btn} 
+
+**2023**
 
 - **Learning from flawed data: Weakly supervised automatic speech recognition**  
   Dongji Gao, Hainan Xu, **Desh Raj**, Leibny Paola Garcia Perera, Daniel Povey, Sanjeev Khudanpur  
