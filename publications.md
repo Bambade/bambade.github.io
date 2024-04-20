@@ -8,9 +8,16 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 **2024**
 
+- **Listening to multi-talker conversations: Modular and end-to-end perspectives**  
+  **Desh Raj**  
+  *PhD Thesis, Johns Hopkins University*  
+  [Thesis](https://arxiv.org/abs/2402.08932){: .btn} 
+  [Slides](/static/ppt/thesis_defense.pdf){: .btn} 
+  [Video](https://www.youtube.com/watch?v=iKnCUHIgG7A){: .btn}  
+
 - **On speaker attribution with SURT**  
   **Desh Raj**, Matthew Wiesner, Matthew Maciejewski, Paola Garcia, Daniel Povey, Sanjeev Khudanpur  
-  *Submitted to Speaker Odyssey 2024*  
+  *Speaker Odyssey 2024*  
   [Paper](https://arxiv.org/abs/2401.15676){: .btn} 
 
 - **Updated corpora and benchmarks for long-form speech recognition**  
