@@ -8,6 +8,11 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 
 **2024**
 
+- **ConEC: Earnings Call Dataset with Real-world Contexts for Benchmarking Contextual Speech Recognition**  
+  Ruizhe Huang, Mahsa Yarmohammadi, Jan Trmal, Jing Liu, **Desh Raj**, Leibny Paola Garcia, Alexei V Ivanov, Patrick Ehlen, Mingzhi Yu, Dan Povey, Sanjeev Khudanpur  
+  *LREC 2024*  
+  [Paper](https://aclanthology.org/2024.lrec-main.328/){: .btn} 
+
 - **Listening to multi-talker conversations: Modular and end-to-end perspectives**  
   **Desh Raj**  
   *PhD Thesis, Johns Hopkins University*  
