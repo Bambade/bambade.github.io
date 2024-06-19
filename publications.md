@@ -23,7 +23,8 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **On speaker attribution with SURT**  
   **Desh Raj**, Matthew Wiesner, Matthew Maciejewski, Paola Garcia, Daniel Povey, Sanjeev Khudanpur  
   *Speaker Odyssey 2024*  
-  [Paper](https://arxiv.org/abs/2401.15676){: .btn} 
+  [Paper](https://arxiv.org/abs/2401.15676){: .btn}
+  [Slides](/static/ppt/odyssey24_surt.pdf){: .btn} 
 
 - **Updated corpora and benchmarks for long-form speech recognition**  
   Jennifer Drexler Fox, **Desh Raj**, Natalie Delworth, Quinn McNamara, Corey Miller, Migüel Jetté  
