@@ -15,7 +15,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   [Code](https://github.com/Simple-Robotics/aligator){: .btn} 
 
 - **Proxqp: an efficient and versatile quadratic programming solver for real-time robotics applications and beyond**  
-  **A. Bambade**, F. Schramm, S. El Kazdadi, S. Caron, A. Taylor, J. Carpentier 
+  **A. Bambade**, F. Schramm, S. El Kazdadi, S. Caron, A. Taylor, J. Carpentier
   *preprint for IEEE Transactions on Robotics*  
   [Paper](https://inria.hal.science/hal-04198663/){: .btn} 
   [Companion Report](https://inria.hal.science/hal-04196897/document){: .btn} 
