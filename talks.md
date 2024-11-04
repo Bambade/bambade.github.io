@@ -5,7 +5,7 @@ title: Talks
 
 Here is a list of my talks and presentations (including presenting work in reading groups):
 
-- **Two classical problems of Centralized Energy Production Management**
+- **Two classical problems of Centralized Energy Production Management**<br />
   *A seminar to the Center for Automation and Control of Mines Paris Tech*   
   October, 2024 [Slides](/static/ppt/presentation_cat_mines_paris_tech.pdf){: .btn}  
 
