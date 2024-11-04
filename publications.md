@@ -12,6 +12,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   W Jallet, **A Bambade**, E Arlaud, S El-Kazdadi, N Mansard, J Carpentier  
   *preprint for IEEE Transactions on Robotics*  
   [Paper](https://inria.hal.science/hal-04332348v1/document){: .btn} 
+  [Code](https://github.com/Simple-Robotics/aligator)
 
 <!-- - **Leveraging augmented-Lagrangian techniques for efficiently differentiating over feasible and infeasible quadratic programs**  
   **A Bambade**, F Schramm, Quentin Le Lidec, S Caron, A Taylor, J Carpentier 
@@ -22,7 +23,8 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   **A Bambade**, F Schramm, S El Kazdadi, S Caron, A Taylor, J Carpentier 
   *preprint for IEEE Transactions on Robotics*  
   [Paper](https://inria.hal.science/hal-04198663/){: .btn} 
-  [companion report](https://inria.hal.science/hal-04196897/document){: .btn} 
+  [Companion report](https://inria.hal.science/hal-04196897/document){: .btn} 
+  [Code](https://github.com/Simple-Robotics/proxsuite)
 
 - **Primal-Dual Proximal Augmented Lagrangian Methods for Quadratic Programming: Theory & Implementation**  
   **Antoine Bambade**  
@@ -34,6 +36,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   **A Bambade**, F Schramm, A Taylor, J Carpentier  
   *Twelfth International Conference on Learning Representations*  
   [Paper](https://openreview.net/pdf?id=YCPDFfmkFr){: .btn} 
+  [Slides]()
 
 **2023**
 

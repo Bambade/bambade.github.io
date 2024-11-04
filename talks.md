@@ -10,6 +10,11 @@ Here is a list of my talks and presentations (including presenting work in readi
   *A seminar to the Center for Automation and Control of Mines Paris Tech*   
   October, 2024
 
+- **Leveraging augmented-Lagrangian techniques for differentiating over infeasible quadratic programs in machine learning**
+	[Slides](/static/ppt/iclr_2024.pdf){: .btn} 
+	*ICLR conference, spotlight session* 
+	March, 2024
+
 - **Primal-Dual Augmented Lagrangian Methods for Differentiable Quadratic Programming: Theory & Implementation**
   [Slides](/static/ppt/phd_defense.pdf){: .btn} 
   <!-- [Video](https://www.youtube.com/watch?v=iKnCUHIgG7A){: .btn}   -->
