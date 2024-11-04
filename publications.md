@@ -12,7 +12,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   W. Jallet, **A. Bambade**, E. Arlaud, S. El-Kazdadi, N. Mansard, J. Carpentier  
   *preprint for IEEE Transactions on Robotics*  
   [Paper](https://inria.hal.science/hal-04332348v1/document){: .btn} 
-  [Code](https://github.com/Simple-Robotics/aligator)
+  [Code](https://github.com/Simple-Robotics/aligator){: .btn} 
 
 - **Proxqp: an efficient and versatile quadratic programming solver for real-time robotics applications and beyond**  
   **A. Bambade**, F. Schramm, S. El Kazdadi, S. Caron, A. Taylor, J. Carpentier 
@@ -22,7 +22,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   [Code](https://github.com/Simple-Robotics/proxsuite){: .btn} 
 
 - **Primal-Dual Proximal Augmented Lagrangian Methods for Quadratic Programming: Theory & Implementation**  
-  **Antoine Bambade**  
+  **A. Bambade**  
   *PhD Thesis, ENS & INRIA Paris*  
   [Thesis](/static/ppt/Thesis_avec_resume_fr_Antoine_Bambade.pdf){: .btn} 
   [Slides](/static/ppt/phd_defense.pdf){: .btn} 
