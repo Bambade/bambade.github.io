@@ -190,15 +190,6 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   [Code](https://github.com/desh2608/kaldi/commit/43cfc9d515b94b321acccae51bf39988dafbbef7){: .btn}
   [Poster](/static/poster/asru-19-poster.pdf){: .btn}
 
-
-- **Using ASR methods for OCR**  
-  Ashish Arora, Chun Chieh Chang, Babak Rekabdar, Daniel Povey, David Etter, **Desh Raj**, Hossein Hadian, Jan Trmal, Paola Garcia, Shinji Watanabe, Vimal Manohar, Yiwen Shao, Sanjeev Khudanpur.  
-  *International Conference on Document Analysis and Recognition* (ICDAR) 2019.  
-  [Preprint](https://www.danielpovey.com/files/2019_icdar_asr_for_ocr.pdf){: .btn}
-  [Paper](https://ieeexplore.ieee.org/document/8978150){: .btn}
-  [Code](https://github.com/kaldi-asr/kaldi/tree/master/egs/bentham){: .btn}
-  [Blog]({% post_url 2018-11-22-subword-segmentation %}){: .btn}
-
 **2018**
 
 - **Uncertain fuzzy self-organization based clustering: interval type-2 approach to adaptive resonance theory**  
