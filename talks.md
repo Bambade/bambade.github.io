@@ -54,7 +54,7 @@ Here is a list of my talks and presentations (including presenting work in readi
   November, 2021 [Slides](/static/ppt/RG4.pdf){: .btn}  
 
 - **Control systems and Reinforcement Learning**<br />
-  *Control & RL reading group (for Willow and Sierra INRIA teams)*<br />  
+  *Control & RL reading group (for Willow and Sierra INRIA teams)*  
   October, 2021 [Slides](/static/ppt/RG1.pdf){: .btn}  
 
 <br /> 
