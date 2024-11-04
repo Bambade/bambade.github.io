@@ -25,13 +25,13 @@ description: Personal Website
 navbar-links:
   Home: ""
   Publications: "publications"
-  # softwares: "softwares"
   Talks: "talks"
+  softwares: "softwares"
   Resume: "resume"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/static/img/desh_new.jpeg"
+avatar: "/static/img/rss_avatar.JPG"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -46,7 +46,7 @@ author:
   email: "bambade.antoine@gmail.com"
   github: Bambade    # eg. daattali
   linkedin: www.linkedin.com/in/antoine-bambade-5b0450135
-  # twitter: rdesh26
+  # twitter: 
 
 # Select which links to show in the footer
 footer-links-active:
@@ -75,7 +75,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "desh2608.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "bambade.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
@@ -199,8 +199,8 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-# gems:
-plugins:
+gems:
+# plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
