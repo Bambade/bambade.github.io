@@ -3,10 +3,10 @@ layout: page
 title: Publications
 ---
 
-You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7pPYEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=JfnD2T8AAAAJ" target="_blank">Google Scholar profile</a>.
 <br />
 
-**2024**
+<!-- **2024**
 
 - **ConEC: Earnings Call Dataset with Real-world Contexts for Benchmarking Contextual Speech Recognition**  
   Ruizhe Huang, Mahsa Yarmohammadi, Jan Trmal, Jing Liu, **Desh Raj**, Leibny Paola Garcia, Alexei V Ivanov, Patrick Ehlen, Mingzhi Yu, Dan Povey, Sanjeev Khudanpur  
@@ -218,7 +218,7 @@ You can also browse my <a href="https://scholar.google.co.in/citations?user=Z-7p
 - **Analysis of data generated from multidimensional type-1 and type-2 fuzzy membership functions**  
   **Desh Raj**, Aditya Gupta, Bhuvnesh Garg, Kenil Tanna, Frank Chung-hoon Rhee.  
   *IEEE Transactions on Fuzzy Systems*, 2017.  
-  [Paper](http://ieeexplore.ieee.org/document/7888454/){: .btn}
+  [Paper](http://ieeexplore.ieee.org/document/7888454/){: .btn} -->
 
 <!-- 
 **Non-refereed project reports:**
