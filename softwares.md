@@ -4,7 +4,6 @@ title: Softwares
 ---
 
 Here are some open-source projects to which I contributed:
-
 <br />
 
 - **[ProxSuite](https://github.com/Simple-Robotics/proxsuite)** 

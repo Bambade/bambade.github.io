@@ -9,18 +9,13 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
 **2024**
 
 - **PROXDDP: Proximal Constrained Trajectory Optimization**  
-  W Jallet, **A Bambade**, E Arlaud, S El-Kazdadi, N Mansard, J Carpentier  
+  W. Jallet, **A. Bambade**, E. Arlaud, S. El-Kazdadi, N. Mansard, J. Carpentier  
   *preprint for IEEE Transactions on Robotics*  
   [Paper](https://inria.hal.science/hal-04332348v1/document){: .btn} 
   [Code](https://github.com/Simple-Robotics/aligator)
 
-<!-- - **Leveraging augmented-Lagrangian techniques for efficiently differentiating over feasible and infeasible quadratic programs**  
-  **A Bambade**, F Schramm, Quentin Le Lidec, S Caron, A Taylor, J Carpentier 
-  *RSS 2024 workshop on frontiers on optimization*  
-  [Paper](https://drive.google.com/file/d/1S5uKHFj4B5_0O938nSLgz6g_QrMb6YKZ/view){: .btn}  -->
-
 - **Proxqp: an efficient and versatile quadratic programming solver for real-time robotics applications and beyond**  
-  **A Bambade**, F Schramm, S El Kazdadi, S Caron, A Taylor, J Carpentier 
+  **A. Bambade**, F. Schramm, S. El Kazdadi, S. Caron, A. Taylor, J. Carpentier 
   *preprint for IEEE Transactions on Robotics*  
   [Paper](https://inria.hal.science/hal-04198663/){: .btn} 
   [Companion Report](https://inria.hal.science/hal-04196897/document){: .btn} 
@@ -33,7 +28,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   [Slides](/static/ppt/phd_defense.pdf){: .btn} 
 
 - **Leveraging augmented-Lagrangian techniques for differentiating over infeasible quadratic programs in machine learning**  
-  **A Bambade**, F Schramm, A Taylor, J Carpentier  
+  **A. Bambade**, F. Schramm, A. Taylor, J. Carpentier  
   *Twelfth International Conference on Learning Representations*  
   [Paper](https://openreview.net/pdf?id=YCPDFfmkFr){: .btn} 
   [Slides](/static/ppt/iclr_2024.pdf){: .btn} 
@@ -48,20 +43,20 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
 **2022**
 
 - **PROX-QP: Yet another Quadratic Programming Solver for Robotics and beyond**  
-  **Antoine Bambade**, Sarah El Kazdadi, Adrien Taylor, Justin Carpentier  
-  *RSS 2022*  
+  **A. Bambade**, S. El Kazdadi, A. Taylor, J. Carpentier  
+  *RSS 2022-Robotics: Science and Systems*  
   [Paper](https://inria.hal.science/hal-03683733/){: .btn} 
   [Code](https://github.com/Simple-Robotics/proxsuite){: .btn} 
 
 - **ProxNLP: Yet another Quadratic Programming Solver for Robotics and beyond**  
-  Wilson Jallet, **Antoine Bambade**, Nicolas Mansard, Justin Carpentier  
-  *6th Legged Robots Workshop, ICRA 2022*  
+  W. Jallet, **A. Bambade**, N. Mansard, J. Carpentier  
+  *6th Legged Robots Workshop, IEEE International Conference on Robotics and Automation 2022*  
   [Paper](https://inria.hal.science/hal-03683733/){: .btn} 
   [Code](https://github.com/Simple-Robotics/proxsuite-nlp){: .btn} 
 
 
 - **Constrained Differential Dynamic Programming: A primal-dual augmented Lagrangian approach**  
-  Wilson Jallet, **Antoine Bambade**, Nicolas Mansard, Justin Carpentier  
+  W. Jallet, **A. Bambade**, N. Mansard, J. Carpentier  
   *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2022*  
   [Paper](https://ieeexplore.ieee.org/abstract/document/9981586){: .btn} 
 
