@@ -34,7 +34,7 @@ Here is a list of my talks and presentations (including presenting work in readi
   September, 2023 [Slides](/static/ppt/RG10.pdf){: .btn}  
 
 - **ProxQP: Yet another Quadratic Programming Solver for Robotics and beyond**<br />
-  *Robotics: Science and Systems* <br />  
+  *Robotics: Science and Systems* 
   July, 2022 [Slides](/static/ppt/JNRH_2022.pdf){: .btn}  
 
 - **Yet another QP Solver for robotics and beyond**<br />
@@ -54,7 +54,7 @@ Here is a list of my talks and presentations (including presenting work in readi
   November, 2021 [Slides](/static/ppt/RG4.pdf){: .btn}  
 
 - **Control systems and Reinforcement Learning**<br />
-  *Control & RL reading group (for Willow and Sierra INRIA teams)* 
+  *Control & RL reading group (for Willow and Sierra INRIA teams)*<br />  
   October, 2021 [Slides](/static/ppt/RG1.pdf){: .btn}  
 
 <br /> 
