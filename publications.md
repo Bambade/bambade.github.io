@@ -23,8 +23,8 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   **A Bambade**, F Schramm, S El Kazdadi, S Caron, A Taylor, J Carpentier 
   *preprint for IEEE Transactions on Robotics*  
   [Paper](https://inria.hal.science/hal-04198663/){: .btn} 
-  [Companion report](https://inria.hal.science/hal-04196897/document){: .btn} 
-  [Code](https://github.com/Simple-Robotics/proxsuite)
+  [Companion Report](https://inria.hal.science/hal-04196897/document){: .btn} 
+  [Code](https://github.com/Simple-Robotics/proxsuite){: .btn} 
 
 - **Primal-Dual Proximal Augmented Lagrangian Methods for Quadratic Programming: Theory & Implementation**  
   **Antoine Bambade**  
@@ -36,7 +36,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   **A Bambade**, F Schramm, A Taylor, J Carpentier  
   *Twelfth International Conference on Learning Representations*  
   [Paper](https://openreview.net/pdf?id=YCPDFfmkFr){: .btn} 
-  [Slides]()
+  [Slides](/static/ppt/iclr_2024.pdf){: .btn} 
 
 **2023**
 
@@ -51,11 +51,14 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
   **Antoine Bambade**, Sarah El Kazdadi, Adrien Taylor, Justin Carpentier  
   *RSS 2022*  
   [Paper](https://inria.hal.science/hal-03683733/){: .btn} 
+  [Code](https://github.com/Simple-Robotics/proxsuite){: .btn} 
 
 - **ProxNLP: Yet another Quadratic Programming Solver for Robotics and beyond**  
   Wilson Jallet, **Antoine Bambade**, Nicolas Mansard, Justin Carpentier  
   *6th Legged Robots Workshop, ICRA 2022*  
   [Paper](https://inria.hal.science/hal-03683733/){: .btn} 
+  [Code](https://github.com/Simple-Robotics/proxsuite-nlp){: .btn} 
+
 
 - **Constrained Differential Dynamic Programming: A primal-dual augmented Lagrangian approach**  
   Wilson Jallet, **Antoine Bambade**, Nicolas Mansard, Justin Carpentier  
