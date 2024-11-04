@@ -16,7 +16,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
 
 - **Proxqp: an efficient and versatile quadratic programming solver for real-time robotics applications and beyond**  
   **A. Bambade**, F. Schramm, S. El Kazdadi, S. Caron, A. Taylor, J. Carpentier <br />
-  *preprint for IEEE Transactions on Robotics* 
+  *preprint for IEEE Transactions on Robotics* <br />
   [Paper](https://inria.hal.science/hal-04198663/){: .btn} 
   [Companion Report](https://inria.hal.science/hal-04196897/document){: .btn} 
   [Code](https://github.com/Simple-Robotics/proxsuite){: .btn} 

@@ -22,16 +22,15 @@ Here is a list of my talks and presentations (including presenting work in readi
   November, 2023 [Slides](/static/ppt/pgmo_days.pdf){: .btn}  
 
 - **QPLayer: a generic and efficient approach for differentiating quadratic programming problems**<br />
-  *International Conference on Robotics and Automation* <br />  
-  May, 2023 <br />
-  [Slides](/static/ppt/poster_icra.pdf){: .btn}  
+  *International Conference on Robotics and Automation*   
+  May, 2023 [Slides](/static/ppt/poster_icra.pdf){: .btn}  
 
 - **QPLayer: a generic and efficient approach for differentiating quadratic programming problems**<br />
-  *IIEEE-RAS TC Poster session on Model-Based Optimization for Robotics* <br />   
+  *IIEEE-RAS TC Poster session on Model-Based Optimization for Robotics*   
   November, 2022 [Slides](/static/ppt/poster_tc_conference.pdf){: .btn}  
 
 - **Augmented Lagrangian methods in the context of control**<br />
-  *Control & RL reading group (for Willow and Sierra INRIA teams)*<br />   
+  *Control & RL reading group (for Willow and Sierra INRIA teams)*   
   September, 2023 [Slides](/static/ppt/RG10.pdf){: .btn}  
 
 - **ProxQP: Yet another Quadratic Programming Solver for Robotics and beyond**<br />
@@ -39,11 +38,10 @@ Here is a list of my talks and presentations (including presenting work in readi
   July, 2022 [Slides](/static/ppt/JNRH_2022.pdf){: .btn}  
 
 - **Yet another QP Solver for robotics and beyond**<br />
-  *Journées Nationales de la Robotique Humanoïde* <br />  
+  *Journées Nationales de la Robotique Humanoïde*   
   July, 2022 [Slides](/static/ppt/JNRH_2022.pdf){: .btn}  
 
 - **Augmented Lagrangian methods for quadratic programming in robotics**<br />
-  <!-- [Slides](/static/ppt/JNRH_2022.pdf){: .btn}   -->
   *Journées MODE de la société de mathématiques appliquées et industrielles*   
   June, 2022
 
@@ -52,11 +50,11 @@ Here is a list of my talks and presentations (including presenting work in readi
   March, 2022 [Slides](/static/ppt/RG8.pdf){: .btn}  
 
 - **Optimal Control Theory**<br />
-  *Control & RL reading group (for Willow and Sierra INRIA teams)*<br />   
+  *Control & RL reading group (for Willow and Sierra INRIA teams)*   
   November, 2021 [Slides](/static/ppt/RG4.pdf){: .btn}  
 
 - **Control systems and Reinforcement Learning**<br />
-  *Control & RL reading group (for Willow and Sierra INRIA teams)*  <br /> 
+  *Control & RL reading group (for Willow and Sierra INRIA teams)* 
   October, 2021 [Slides](/static/ppt/RG1.pdf){: .btn}  
 
 <br /> 
