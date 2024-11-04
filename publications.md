@@ -10,7 +10,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
 
 - **PROXDDP: Proximal Constrained Trajectory Optimization**  
   W. Jallet, **A. Bambade**, E. Arlaud, S. El-Kazdadi, N. Mansard, J. Carpentier <br />
-  *preprint for IEEE Transactions on Robotics*  
+  *preprint for IEEE Transactions on Robotics*<br /> 
   [Paper](https://inria.hal.science/hal-04332348v1/document){: .btn} 
   [Code](https://github.com/Simple-Robotics/aligator){: .btn} 
 
@@ -43,8 +43,8 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
 **2022**
 
 - **PROX-QP: Yet another Quadratic Programming Solver for Robotics and beyond**  
-  **A. Bambade**, S. El Kazdadi, A. Taylor, J. Carpentier<br />  
-  *RSS 2022-Robotics: Science and Systems*  
+  **A. Bambade**, S. El Kazdadi, A. Taylor, J. Carpentier  
+  *RSS 2022-Robotics: Science and Systems*<br /> 
   [Paper](https://inria.hal.science/hal-03683733/){: .btn} 
   [Code](https://github.com/Simple-Robotics/proxsuite){: .btn} 
 
