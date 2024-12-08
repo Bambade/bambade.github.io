@@ -24,7 +24,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
 - **Primal-Dual Proximal Augmented Lagrangian Methods for Quadratic Programming: Theory & Implementation**  
   **A. Bambade**  
   *PhD Thesis, ENS & INRIA Paris*  
-  [Thesis](/static/ppt/Thesis_avec_resume_fr_Antoine_Bambade.pdf){: .btn} 
+  [Thesis](/static/pdf/Thesis_avec_resume_fr_Antoine_Bambade.pdf){: .btn} 
   [Slides](/static/ppt/phd_defense.pdf){: .btn} 
 
 - **Leveraging augmented-Lagrangian techniques for differentiating over infeasible quadratic programs in machine learning**  
