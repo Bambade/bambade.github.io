@@ -29,7 +29,7 @@ You can also browse my <a href="https://scholar.google.com/citations?hl=fr&user=
 
 - **Leveraging augmented-Lagrangian techniques for differentiating over infeasible quadratic programs in machine learning**  
   **A. Bambade**, F. Schramm, A. Taylor, J. Carpentier  <br /> 
-  *Twelfth International Conference on Learning Representations*  
+  *Twelfth International Conference on Learning Representations (spotlight paper)* 
   [Paper](https://openreview.net/pdf?id=YCPDFfmkFr){: .btn} 
   [Slides](/static/ppt/iclr_2024.pdf){: .btn} 
 
